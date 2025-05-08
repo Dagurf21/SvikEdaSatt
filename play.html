@@ -1,51 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="is">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Play - Svik eða Satt?</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spilaðu – Svik eða Satt?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset & Base */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { font-family: 'Lato', Arial, sans-serif; background: #f9f9f9; color: #333; overflow-x: hidden; height: 100%; }
+    a { text-decoration: none; color: inherit; }
+    button { cursor: pointer; }
+
+    /* Fixed Header */
+    header.global-header { position: fixed; top: 0; left: 0; width: 100%; height: 80px; display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 1000; }
+    header.global-header .logo img { height: 40px; margin-right: 0.5rem; }
+    header.global-header .logo span { font-size: 1.5rem; font-weight: 700; color: #007bff; }
+    header.global-header nav ul { list-style: none; display: flex; gap: 1rem; }
+    header.global-header nav ul li a { padding: 0.5rem; font-weight: 600; transition: background 0.2s; }
+    header.global-header nav ul li a:hover { background: #007bff; color: #fff; border-radius: 4px; }
+    main { padding-top: 100px; }
+
+    /* Game Layout */
+    .game-container { display: flex; height: calc(100vh - 100px); }
+    .sidebar { width: 240px; background: #f8f9fa; border-right: 1px solid #e0e0e0; display: flex; flex-direction: column; }
+    #tabs { display: flex; background: #fff; }
+    .tab { flex: 1; text-align: center; padding: 1rem; font-weight: 700; cursor: pointer; border-bottom: 3px solid transparent; transition: background 0.2s, border-color 0.2s; }
+    .tab.active { border-color: #007bff; }
+    .tab:not(.active):hover { background: #f1f1f1; }
+    .email-list { flex: 1; overflow-y: auto; padding: 0.5rem 0; }
+    .email-item { display: flex; align-items: center; padding: 0.75rem 1rem; border-radius: 4px; transition: background 0.2s; }
+    .email-item:hover { background: #eef7ff; }
+    .email-item.active { background: #d0e7ff; }
+    .email-item .avatar {
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+      margin-right: 0.75rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 16px;       /* Uniform font size */
+      line-height: 32px;     /* Center text vertically */
+      flex-shrink: 0;        /* Prevent shrinking */
+    }
+    .email-item .meta { display: flex; flex-direction: column; }
+    .email-item .meta .sender { font-weight: 700; font-size: 0.95rem; color: #333; }
+    .email-item .meta .subject { font-size: 0.85rem; color: #666; }
+
+    /* Detail Panel */
+    .detail-panel { flex: 1; background: #fff; display: flex; flex-direction: column; padding: 1.5rem 2rem; }
+    .detail-header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid #e0e0e0; }
+    .detail-header h2 { font-size: 1.5rem; color: #007bff; font-weight: 700; margin: 0; }
+    .detail-body { flex: 1; overflow-y: auto; padding: 1rem 0; line-height: 1.6; }
+    .detail-body p { margin: 0.5rem 0; }
+    .detail-footer { border-top: 1px solid #e0e0e0; padding-top: 1rem; text-align: right; }
+    .detail-footer button { background: #007bff; color: #fff; padding: 0.6rem 1.2rem; border: none; border-radius: 4px; font-weight: 700; transition: background 0.2s; }
+    .detail-footer button:hover { background: #0056b3; }
+
+    /* Header Stats */
+    .status-bar { display: flex; gap: 2rem; align-items: center; font-weight: 700; }
+    .status-bar div { display: flex; align-items: center; gap: 0.25rem; }
+    .status-bar .timer { color: #d9534f; }
+
+        /* Win Screen Styles */
+        #win-screen {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+    }
+    #win-screen .content {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      max-width: 320px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    }
+    #win-screen h2 {
+      margin-bottom: 1rem;
+      color: #007bff;
+    }
+    #win-screen p {
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      color: #333;
+    }
+    #win-screen button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+  </style>
 </head>
 <body>
-<!-- Global Header -->
-<header class="global-header">
+  <header class="global-header">
     <a href="index.html">
-        <div class="logo">
-            <img src="assets/icons/logoSvikEdaSatt.png" alt="Svik eða Satt logo" />
-            <span>Svik eða Satt?</span>    
-        </div>    
+      <div class="logo">
+        <img src="assets/icons/logoSvikEdaSatt.png" alt="Logo"/>
+        <span>Svik eða Satt?</span>
+      </div>
     </a>
     <nav>
-        <ul>
-            <li><a href="about.html">Um okkur</a></li>
-            <li><a href="contact.html">Hafðu samband</a></li>
-            <li><a href="rules.html">Leikreglur</a></li>
-            <li><a href="fraedsla.html">Fræðsla</a></li>
-            <li><a href="subscribe.html">Áskrift</a></li>
-            <li><a href="play.html" class="btn">Spilaðu Núna !</a></li>
-        </ul>
+      <ul>
+        <li>
+          <a href="index.html">Heim</a>
+        </li>
+        <li>
+          <a href="play.html" class="active">Spilaðu</a>
+        </li>
+      </ul>
     </nav>
-</header>
-<div class="play-header">
-    <div class="menu">☰</div>
-    <div class="challenge">ÁSKORUN 3/50</div>
-    <div style="margin-left:auto;">
-        Score: <span class="score">0</span> | Time: <span class="timer">60</span>s
+    <div class="status-bar">
+      <div class="challenge">ÁSKORUN 1/50</div>
+      <div class="score">0</div>
+      <div class="timer">60</div>
     </div>
-</div>
-<div id="play-area">
-    <div id="inbox-trash">
+  </header>
+
+  <main>
+    <div class="game-container">
+      <!-- Sidebar -->
+      <div class="sidebar">
         <div id="tabs">
-            <div data-tab="inbox" class="active">INBOX (<span id="tab-inbox-count">0</span>)</div>
-            <div data-tab="trash">TRASH (<span id="tab-trash-count">0</span>)</div>
+          <div class="tab active" data-tab="inbox">Inbox <span id="tab-inbox-count">10</span></div>
+          <div class="tab" data-tab="trash">Rusl <span id="tab-trash-count">0</span></div>
         </div>
-        <div id="email-list"></div>
+        <div class="email-list" id="email-list">
+          <!-- avatar-based items -->
+        </div>
+      </div>
+
+      <!-- Detail Panel -->
+      <div class="detail-panel">
+        <div class="detail-header">
+          <h2 id="detail-subject">Veldu tölvupóst</h2>
+          <button id="closeDetail" style="background:transparent;color:#007bff;border:none;font-size:1.2rem;">×</button>
+        </div>
+        <div class="detail-body" id="email-detail">
+          <p>Veldu tölvupóst til að skoða innihald.</p>
+        </div>
+        <div class="detail-footer" id="detail-footer"></div>
+      </div>
     </div>
-    <div id="email-detail">
-        <p>Select an email to view details.</p>
+  </main>
+
+    <!-- Win Screen Overlay -->
+    <div id="win-screen">
+      <div class="content">
+        <h2>Til hamingju!</h2>
+        <p>Þú hafðir uppskarð <span id="final-score"></span> stig í þessum leik.</p>
+        <button id="play-again">Spila aftur</button>
+      </div>
     </div>
-</div>
-<script src="assets/js/game.js"></script>
+
+  <script src="assets/js/game.js"></script>
 </body>
 </html>
