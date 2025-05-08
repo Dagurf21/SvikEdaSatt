@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "sender": "no-reply@adobe.com",
+    "subject": "Weekly Digest: Top News at Adobe",
+    "phishing": false,
+    "body": "If you have any questions, please contact our customer support team. Your recent transaction has been processed successfully. You can view your activity or download your statement by following the link below. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. https://www.adobe.com/account?id=b26ef808-1fe4-49ae-9aa1-7fc546c2b2b8"
+  },
+  {
+    "id": 2,
+    "sender": "no-reply@dropbox.com",
+    "subject": "Weekly Digest: Top News at Dropbox",
+    "phishing": false,
+    "body": "If you have any questions, please contact our customer support team. Dear Valued Customer, Thank you for choosing our service; we appreciate your business and look forward to assisting you again. Your recent transaction has been processed successfully. This is an automated message, please do not reply directly to this email. https://www.dropbox.com/account?id=1548d909-638a-4a02-8cf4-31d8661a9fc1"
+  },
+  {
+    "id": 3,
+    "sender": "support@apple-freeoffer.com",
+    "subject": "Final Notice: Payment Required",
+    "phishing": true,
+    "body": "Click the link below to verify your account details now: We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. Our security team will review your submission and unlock your account promptly. To restore full access, please verify your information immediately to avoid permanent deactivation. https://apple-freeoffer.com/verify?id=bffa3975-6df6-416a-aee9-160b6577a2b7"
+  },
+  {
+    "id": 4,
+    "sender": "support@global-lotto.com",
+    "subject": "Important: Claim Your Stimulus Check",
+    "phishing": true,
+    "body": "Provide your login credentials and payment details to confirm your identity: We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. https://global-lotto.com/verify?id=fad928b7-0452-4e10-aa79-18a2f1625f5c"
+  },
+  {
+    "id": 5,
+    "sender": "no-reply@apple.com",
+    "subject": "Your Apple Order #177572 Has Shipped",
+    "phishing": false,
+    "body": "Thank you for choosing our service; we appreciate your business and look forward to assisting you again. Dear Valued Customer, If you have any questions, please contact our customer support team. This is an automated message, please do not reply directly to this email. https://www.apple.com/account?id=6f697eef-1bd3-40aa-a0bc-4248f4c9b0e6"
+  },
+  {
+    "id": 6,
+    "sender": "no-reply@slack.com",
+    "subject": "Package Delivery Update",
+    "phishing": false,
+    "body": "Thank you for choosing our service; we appreciate your business and look forward to assisting you again. You can view your activity or download your statement by following the link below. If you have any questions, please contact our customer support team. Your recent transaction has been processed successfully. https://www.slack.com/account?id=5d76cf73-c4a3-466a-bc16-2317f42a0075"
+  },
+  {
+    "id": 7,
+    "sender": "no-reply@dhl.com",
+    "subject": "Thank You for Your Purchase at Dhl",
+    "phishing": false,
+    "body": "Dear Valued Customer, Your recent transaction has been processed successfully. If you have any questions, please contact our customer support team. You can view your activity or download your statement by following the link below. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. This is an automated message, please do not reply directly to this email. https://www.dhl.com/account?id=4a5b9634-ae5b-4b9c-a948-38aa71f3d624"
+  },
+  {
+    "id": 8,
+    "sender": "support@spacetourism-verify.com",
+    "subject": "Invoice Overdue \u2013 Immediate Payment Required",
+    "phishing": true,
+    "body": "Click the link below to verify your account details now: Provide your login credentials and payment details to confirm your identity: https://spacetourism-verify.com/verify?id=cd47e8fd-7784-4c60-9961-608bd7ceb40e"
+  },
+  {
+    "id": 9,
+    "sender": "support@wealthysheikh.com",
+    "subject": "Action Required: Confirm Your Account Details",
+    "phishing": true,
+    "body": "Click the link below to verify your account details now: Our security team will review your submission and unlock your account promptly. Provide your login credentials and payment details to confirm your identity: https://wealthysheikh.com/verify?id=338f8611-8e91-4ee0-b518-dd6c91250e2a"
+  },
+  {
+    "id": 10,
+    "sender": "support@linkedin-secure.com",
+    "subject": "Final Notice: Payment Required",
+    "phishing": true,
+    "body": "Provide your login credentials and payment details to confirm your identity: Our security team will review your submission and unlock your account promptly. To restore full access, please verify your information immediately to avoid permanent deactivation. Failure to respond within 24 hours may result in account termination. https://linkedin-secure.com/verify?id=0b19fb73-257a-43ab-a06c-86bdbee85b15"
+  },
+  {
+    "id": 11,
+    "sender": "support@google-accounts.com",
+    "subject": "Congratulations \u2013 You\u2019ve Won $7,000,000!",
+    "phishing": true,
+    "body": "Failure to respond within 24 hours may result in account termination. Click the link below to verify your account details now: To restore full access, please verify your information immediately to avoid permanent deactivation. https://google-accounts.com/verify?id=1c5ff97c-942b-4485-8527-28a78bbe7725"
+  },
+  {
+    "id": 12,
+    "sender": "no-reply@adobe.com",
+    "subject": "Package Delivery Update",
+    "phishing": false,
+    "body": "You can view your activity or download your statement by following the link below. Dear Valued Customer, If you have any questions, please contact our customer support team. Your recent transaction has been processed successfully. This is an automated message, please do not reply directly to this email. https://www.adobe.com/account?id=935549b3-902d-4bf7-adaf-202eb81fd83b"
+  },
+  {
+    "id": 13,
+    "sender": "support@paypal-notify.com",
+    "subject": "Invoice Overdue \u2013 Immediate Payment Required",
+    "phishing": true,
+    "body": "Failure to respond within 24 hours may result in account termination. Our security team will review your submission and unlock your account promptly. We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. Click the link below to verify your account details now: https://paypal-notify.com/verify?id=5cafae16-fa51-47b0-994e-0e2cb284b7c7"
+  },
+  {
+    "id": 14,
+    "sender": "support@wealthysheikh.com",
+    "subject": "Verify Your Identity to Avoid Suspension",
+    "phishing": true,
+    "body": "Failure to respond within 24 hours may result in account termination. To restore full access, please verify your information immediately to avoid permanent deactivation. We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. https://wealthysheikh.com/verify?id=45e5a82c-e975-4a64-be04-e15fe8b12057"
+  },
+  {
+    "id": 15,
+    "sender": "no-reply@amazon.com",
+    "subject": "Alert: New Login to Your Amazon Account",
+    "phishing": false,
+    "body": "If you have any questions, please contact our customer support team. Dear Valued Customer, Thank you for choosing our service; we appreciate your business and look forward to assisting you again. Your recent transaction has been processed successfully. This is an automated message, please do not reply directly to this email. You can view your activity or download your statement by following the link below. https://www.amazon.com/account?id=2d47d0ed-3a1d-4280-a02b-e3f9a60543d4"
+  },
+  {
+    "id": 16,
+    "sender": "support@spacetourism-verify.com",
+    "subject": "Action Required: Confirm Your Account Details",
+    "phishing": true,
+    "body": "We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. Provide your login credentials and payment details to confirm your identity: https://spacetourism-verify.com/verify?id=2e38ed15-60a0-408a-b3b4-4eb9a8f92c25"
+  },
+  {
+    "id": 17,
+    "sender": "no-reply@irs.gov",
+    "subject": "Your Irs Statement is Ready",
+    "phishing": false,
+    "body": "Thank you for choosing our service; we appreciate your business and look forward to assisting you again. This is an automated message, please do not reply directly to this email. You can view your activity or download your statement by following the link below. Dear Valued Customer, https://www.irs.gov/account?id=6100669f-e120-42cf-8098-c4189ffc28d8"
+  },
+  {
+    "id": 18,
+    "sender": "support@global-lotto.com",
+    "subject": "Urgent: Your Global Lotto Account Has Been Locked",
+    "phishing": true,
+    "body": "We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. Our security team will review your submission and unlock your account promptly. Provide your login credentials and payment details to confirm your identity: Failure to respond within 24 hours may result in account termination. https://global-lotto.com/verify?id=01321b34-4dde-4dec-b578-b602cb61e4b8"
+  },
+  {
+    "id": 19,
+    "sender": "support@apple-freeoffer.com",
+    "subject": "Urgent: Your Apple Freeoffer Account Has Been Locked",
+    "phishing": true,
+    "body": "We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. Our security team will review your submission and unlock your account promptly. https://apple-freeoffer.com/verify?id=d2baf859-8d7c-4ff0-95e5-9efc3a6433aa"
+  },
+  {
+    "id": 20,
+    "sender": "support@university-portal.edu",
+    "subject": "Your Account Will Be Deactivated Unless Verified",
+    "phishing": true,
+    "body": "Failure to respond within 24 hours may result in account termination. Provide your login credentials and payment details to confirm your identity: https://university-portal.edu/verify?id=c12e149c-44cd-4018-99e1-75f78abdf612"
+  },
+  {
+    "id": 21,
+    "sender": "no-reply@google.com",
+    "subject": "Package Delivery Update",
+    "phishing": false,
+    "body": "This is an automated message, please do not reply directly to this email. If you have any questions, please contact our customer support team. Dear Valued Customer, Thank you for choosing our service; we appreciate your business and look forward to assisting you again. Your recent transaction has been processed successfully. You can view your activity or download your statement by following the link below. https://www.google.com/account?id=f7f997dc-b0cf-4757-aba4-83e451517f26"
+  },
+  {
+    "id": 22,
+    "sender": "no-reply@nike.com",
+    "subject": "Package Delivery Update",
+    "phishing": false,
+    "body": "If you have any questions, please contact our customer support team. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. You can view your activity or download your statement by following the link below. This is an automated message, please do not reply directly to this email. Your recent transaction has been processed successfully. Dear Valued Customer, https://www.nike.com/account?id=0124e37b-5045-4e4b-bfa9-96f7da65b783"
+  },
+  {
+    "id": 23,
+    "sender": "no-reply@adobe.com",
+    "subject": "Meeting Reminder: Quarterly Review on April 24, 2025",
+    "phishing": false,
+    "body": "Thank you for choosing our service; we appreciate your business and look forward to assisting you again. Your recent transaction has been processed successfully. Dear Valued Customer, You can view your activity or download your statement by following the link below. This is an automated message, please do not reply directly to this email. https://www.adobe.com/account?id=ebf45c1b-3a29-46be-b076-b920362f05d9"
+  },
+  {
+    "id": 24,
+    "sender": "support@banksecure.com",
+    "subject": "Urgent: Your Banksecure Account Has Been Locked",
+    "phishing": true,
+    "body": "Click the link below to verify your account details now: Provide your login credentials and payment details to confirm your identity: https://banksecure.com/verify?id=8d5c410d-b6c8-49ef-a087-19849d2d9fdc"
+  },
+  {
+    "id": 25,
+    "sender": "support@wealthysheikh.com",
+    "subject": "Your IP is Involved in Cybercrime",
+    "phishing": true,
+    "body": "We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. To restore full access, please verify your information immediately to avoid permanent deactivation. https://wealthysheikh.com/verify?id=fc162999-2171-482c-80fd-3ea5f3250990"
+  },
+  {
+    "id": 26,
+    "sender": "support@netflix-verify.com",
+    "subject": "Important: Claim Your Stimulus Check",
+    "phishing": true,
+    "body": "Provide your login credentials and payment details to confirm your identity: To restore full access, please verify your information immediately to avoid permanent deactivation. https://netflix-verify.com/verify?id=35eb9caa-123f-43b3-8db4-f6b2cc7107e2"
+  },
+  {
+    "id": 27,
+    "sender": "support@secure-login-microsoft.com",
+    "subject": "Final Notice: Payment Required",
+    "phishing": true,
+    "body": "Failure to respond within 24 hours may result in account termination. Click the link below to verify your account details now: Provide your login credentials and payment details to confirm your identity: https://secure-login-microsoft.com/verify?id=6a11821b-a7af-4105-8db6-4215647893eb"
+  },
+  {
+    "id": 28,
+    "sender": "support@university-portal.edu",
+    "subject": "Congratulations \u2013 You\u2019ve Won $4,000,000!",
+    "phishing": true,
+    "body": "Our security team will review your submission and unlock your account promptly. To restore full access, please verify your information immediately to avoid permanent deactivation. Click the link below to verify your account details now: https://university-portal.edu/verify?id=7db9a734-26ef-4bc3-8dfc-10e5d8eecf28"
+  },
+  {
+    "id": 29,
+    "sender": "support@university-portal.edu",
+    "subject": "Final Notice: Payment Required",
+    "phishing": true,
+    "body": "To restore full access, please verify your information immediately to avoid permanent deactivation. We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. Provide your login credentials and payment details to confirm your identity: Failure to respond within 24 hours may result in account termination. https://university-portal.edu/verify?id=1ff02340-2407-4a87-8e48-eeb3d4865339"
+  },
+  {
+    "id": 30,
+    "sender": "no-reply@slack.com",
+    "subject": "Invitation: Upcoming Workshop on April 08, 2025",
+    "phishing": false,
+    "body": "Your recent transaction has been processed successfully. This is an automated message, please do not reply directly to this email. You can view your activity or download your statement by following the link below. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. If you have any questions, please contact our customer support team. https://www.slack.com/account?id=53ec5efa-f0f4-405e-9fc4-52db34bfffac"
+  },
+  {
+    "id": 31,
+    "sender": "no-reply@facebook.com",
+    "subject": "Thank You for Your Purchase at Facebook",
+    "phishing": false,
+    "body": "You can view your activity or download your statement by following the link below. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. Your recent transaction has been processed successfully. Dear Valued Customer, This is an automated message, please do not reply directly to this email. https://www.facebook.com/account?id=21ce7c37-e3c4-4288-9d18-5735622c493b"
+  },
+  {
+    "id": 32,
+    "sender": "support@netflix-verify.com",
+    "subject": "Your IP is Involved in Cybercrime",
+    "phishing": true,
+    "body": "To restore full access, please verify your information immediately to avoid permanent deactivation. Click the link below to verify your account details now: Failure to respond within 24 hours may result in account termination. https://netflix-verify.com/verify?id=70abce34-a55c-485d-a9c8-c070377232a6"
+  },
+  {
+    "id": 33,
+    "sender": "support@banksecure.com",
+    "subject": "Your Account Will Be Deactivated Unless Verified",
+    "phishing": true,
+    "body": "Our security team will review your submission and unlock your account promptly. To restore full access, please verify your information immediately to avoid permanent deactivation. https://banksecure.com/verify?id=f74fd33c-83a7-48eb-a893-d194ff13dfb7"
+  },
+  {
+    "id": 34,
+    "sender": "support@banksecure.com",
+    "subject": "Security Alert: Unauthorized Access Detected",
+    "phishing": true,
+    "body": "Click the link below to verify your account details now: Our security team will review your submission and unlock your account promptly. https://banksecure.com/verify?id=dd52ebee-60fc-47c7-8e5a-6b229179eeba"
+  },
+  {
+    "id": 35,
+    "sender": "no-reply@slack.com",
+    "subject": "Your Slack Order #240940 Has Shipped",
+    "phishing": false,
+    "body": "You can view your activity or download your statement by following the link below. If you have any questions, please contact our customer support team. Your recent transaction has been processed successfully. Dear Valued Customer, This is an automated message, please do not reply directly to this email. https://www.slack.com/account?id=b40ef7b2-fe71-495e-bf5d-2946d12d9dac"
+  },
+  {
+    "id": 36,
+    "sender": "no-reply@irs.gov",
+    "subject": "Package Delivery Update",
+    "phishing": false,
+    "body": "You can view your activity or download your statement by following the link below. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. Your recent transaction has been processed successfully. This is an automated message, please do not reply directly to this email. If you have any questions, please contact our customer support team. https://www.irs.gov/account?id=6a7d118e-a42c-42bc-b5b8-903b8b737e02"
+  },
+  {
+    "id": 37,
+    "sender": "no-reply@adobe.com",
+    "subject": "Meeting Reminder: Quarterly Review on April 09, 2025",
+    "phishing": false,
+    "body": "Thank you for choosing our service; we appreciate your business and look forward to assisting you again. You can view your activity or download your statement by following the link below. Dear Valued Customer, If you have any questions, please contact our customer support team. Your recent transaction has been processed successfully. This is an automated message, please do not reply directly to this email. https://www.adobe.com/account?id=b8447633-9656-4e75-a072-0fa1c5247eb6"
+  },
+  {
+    "id": 38,
+    "sender": "no-reply@microsoft.com",
+    "subject": "Invitation: Upcoming Workshop on April 28, 2025",
+    "phishing": false,
+    "body": "Thank you for choosing our service; we appreciate your business and look forward to assisting you again. Dear Valued Customer, Your recent transaction has been processed successfully. This is an automated message, please do not reply directly to this email. If you have any questions, please contact our customer support team. You can view your activity or download your statement by following the link below. https://www.microsoft.com/account?id=de8991eb-ee42-4446-80dd-aac6fc33872a"
+  },
+  {
+    "id": 39,
+    "sender": "no-reply@dropbox.com",
+    "subject": "Weekly Digest: Top News at Dropbox",
+    "phishing": false,
+    "body": "This is an automated message, please do not reply directly to this email. If you have any questions, please contact our customer support team. Your recent transaction has been processed successfully. You can view your activity or download your statement by following the link below. Dear Valued Customer, https://www.dropbox.com/account?id=44facf55-d4af-4d07-9301-d0f833f5bfbd"
+  },
+  {
+    "id": 40,
+    "sender": "no-reply@adobe.com",
+    "subject": "Your Adobe Statement is Ready",
+    "phishing": false,
+    "body": "You can view your activity or download your statement by following the link below. If you have any questions, please contact our customer support team. Dear Valued Customer, This is an automated message, please do not reply directly to this email. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. Your recent transaction has been processed successfully. https://www.adobe.com/account?id=86377eb1-5bef-4a0e-92a9-679e408715f7"
+  },
+  {
+    "id": 41,
+    "sender": "no-reply@dhl.com",
+    "subject": "Package Delivery Update",
+    "phishing": false,
+    "body": "This is an automated message, please do not reply directly to this email. Dear Valued Customer, You can view your activity or download your statement by following the link below. https://www.dhl.com/account?id=01ec5d00-b0f1-4d8d-87ba-4bfabe3ff97d"
+  },
+  {
+    "id": 42,
+    "sender": "no-reply@spotify.com",
+    "subject": "Your Spotify Statement is Ready",
+    "phishing": false,
+    "body": "You can view your activity or download your statement by following the link below. Dear Valued Customer, This is an automated message, please do not reply directly to this email. If you have any questions, please contact our customer support team. Your recent transaction has been processed successfully. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. https://www.spotify.com/account?id=e12308c5-f0ce-4abc-be00-f4b413aa9591"
+  },
+  {
+    "id": 43,
+    "sender": "no-reply@university.edu",
+    "subject": "Your University Order #823431 Has Shipped",
+    "phishing": false,
+    "body": "Dear Valued Customer, Your recent transaction has been processed successfully. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. If you have any questions, please contact our customer support team. https://www.university.edu/account?id=8a2d2ace-e1bb-4fb4-9676-6bcec252c5a7"
+  },
+  {
+    "id": 44,
+    "sender": "support@apple-freeoffer.com",
+    "subject": "Important: Claim Your Stimulus Check",
+    "phishing": true,
+    "body": "We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. Our security team will review your submission and unlock your account promptly. To restore full access, please verify your information immediately to avoid permanent deactivation. Click the link below to verify your account details now: https://apple-freeoffer.com/verify?id=6fd8fc5d-b355-40e4-ab14-34c022875437"
+  },
+  {
+    "id": 45,
+    "sender": "support@paypal-notify.com",
+    "subject": "Your Account Will Be Deactivated Unless Verified",
+    "phishing": true,
+    "body": "Click the link below to verify your account details now: Provide your login credentials and payment details to confirm your identity: Failure to respond within 24 hours may result in account termination. https://paypal-notify.com/verify?id=a38c3d50-d43f-4048-97d4-dc2b7836d17a"
+  },
+  {
+    "id": 46,
+    "sender": "no-reply@linkedin.com",
+    "subject": "Alert: New Login to Your Linkedin Account",
+    "phishing": false,
+    "body": "If you have any questions, please contact our customer support team. Your recent transaction has been processed successfully. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. Dear Valued Customer, You can view your activity or download your statement by following the link below. https://www.linkedin.com/account?id=ec3a8123-c235-472e-91ac-6492b7d49379"
+  },
+  {
+    "id": 47,
+    "sender": "no-reply@twitter.com",
+    "subject": "Your Twitter Order #141104 Has Shipped",
+    "phishing": false,
+    "body": "Dear Valued Customer, This is an automated message, please do not reply directly to this email. You can view your activity or download your statement by following the link below. Your recent transaction has been processed successfully. If you have any questions, please contact our customer support team. https://www.twitter.com/account?id=ef2417ef-7311-42cb-99d1-1a509aab3f29"
+  },
+  {
+    "id": 48,
+    "sender": "no-reply@slack.com",
+    "subject": "Your Slack Subscription Was Renewed",
+    "phishing": false,
+    "body": "If you have any questions, please contact our customer support team. Dear Valued Customer, This is an automated message, please do not reply directly to this email. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. You can view your activity or download your statement by following the link below. Your recent transaction has been processed successfully. https://www.slack.com/account?id=fa46b65e-9490-4179-a181-c841a714c0fb"
+  },
+  {
+    "id": 49,
+    "sender": "support@university-portal.edu",
+    "subject": "Final Notice: Payment Required",
+    "phishing": true,
+    "body": "Our security team will review your submission and unlock your account promptly. Click the link below to verify your account details now: https://university-portal.edu/verify?id=fbd79c4f-3bb1-4b32-b71d-4ccbda7553cc"
+  },
+  {
+    "id": 50,
+    "sender": "no-reply@amazon.com",
+    "subject": "Your Amazon Order #336414 Has Shipped",
+    "phishing": false,
+    "body": "Your recent transaction has been processed successfully. Dear Valued Customer, This is an automated message, please do not reply directly to this email. https://www.amazon.com/account?id=0e5d7925-2ee5-4457-8da1-d68aa19972e2"
+  },
+  {
+    "id": 51,
+    "sender": "no-reply@spotify.com",
+    "subject": "Meeting Reminder: Quarterly Review on April 24, 2025",
+    "phishing": false,
+    "body": "If you have any questions, please contact our customer support team. Your recent transaction has been processed successfully. Dear Valued Customer, https://www.spotify.com/account?id=9e052ea3-93c3-4d28-94d9-575be8d171ce"
+  },
+  {
+    "id": 52,
+    "sender": "support@lotteryvip.com",
+    "subject": "Action Required: Confirm Your Account Details",
+    "phishing": true,
+    "body": "We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. Provide your login credentials and payment details to confirm your identity: To restore full access, please verify your information immediately to avoid permanent deactivation. https://lotteryvip.com/verify?id=498e8ca8-ab62-4d88-9d46-47da444d075c"
+  },
+  {
+    "id": 53,
+    "sender": "no-reply@nike.com",
+    "subject": "Weekly Digest: Top News at Nike",
+    "phishing": false,
+    "body": "Thank you for choosing our service; we appreciate your business and look forward to assisting you again. This is an automated message, please do not reply directly to this email. Your recent transaction has been processed successfully. If you have any questions, please contact our customer support team. You can view your activity or download your statement by following the link below. https://www.nike.com/account?id=3b337812-e31f-4d6b-a9b3-3ea277781895"
+  },
+  {
+    "id": 54,
+    "sender": "no-reply@irs.gov",
+    "subject": "Package Delivery Update",
+    "phishing": false,
+    "body": "Thank you for choosing our service; we appreciate your business and look forward to assisting you again. This is an automated message, please do not reply directly to this email. You can view your activity or download your statement by following the link below. Your recent transaction has been processed successfully. https://www.irs.gov/account?id=a50453eb-15c4-4121-af8a-f7e7adef0ebe"
+  },
+  {
+    "id": 55,
+    "sender": "no-reply@spotify.com",
+    "subject": "Your Spotify Statement is Ready",
+    "phishing": false,
+    "body": "Thank you for choosing our service; we appreciate your business and look forward to assisting you again. Dear Valued Customer, You can view your activity or download your statement by following the link below. Your recent transaction has been processed successfully. https://www.spotify.com/account?id=306a3f88-9d2f-4b08-98d9-e544fb07e8bd"
+  },
+  {
+    "id": 56,
+    "sender": "no-reply@spotify.com",
+    "subject": "Package Delivery Update",
+    "phishing": false,
+    "body": "You can view your activity or download your statement by following the link below. This is an automated message, please do not reply directly to this email. If you have any questions, please contact our customer support team. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. Dear Valued Customer, https://www.spotify.com/account?id=34af6bde-efac-4d39-b99c-2c743b9ff276"
+  },
+  {
+    "id": 57,
+    "sender": "support@get-rich-quick.com",
+    "subject": "Security Alert: Unauthorized Access Detected",
+    "phishing": true,
+    "body": "We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. To restore full access, please verify your information immediately to avoid permanent deactivation. Our security team will review your submission and unlock your account promptly. Provide your login credentials and payment details to confirm your identity: https://get-rich-quick.com/verify?id=1372abaa-9c91-4b00-b051-f6eb20b59611"
+  },
+  {
+    "id": 58,
+    "sender": "support@spacetourism-verify.com",
+    "subject": "Your Account Will Be Deactivated Unless Verified",
+    "phishing": true,
+    "body": "We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. Click the link below to verify your account details now: https://spacetourism-verify.com/verify?id=494515d4-def1-478f-b268-4db8b5288cd7"
+  },
+  {
+    "id": 59,
+    "sender": "support@google-accounts.com",
+    "subject": "Final Notice: Payment Required",
+    "phishing": true,
+    "body": "We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. Our security team will review your submission and unlock your account promptly. Provide your login credentials and payment details to confirm your identity: To restore full access, please verify your information immediately to avoid permanent deactivation. https://google-accounts.com/verify?id=a61a487c-515a-45b0-b3f1-f7f9b59aae84"
+  },
+  {
+    "id": 60,
+    "sender": "support@secure-update-microft.com",
+    "subject": "Security Alert: Unauthorized Access Detected",
+    "phishing": true,
+    "body": "Click the link below to verify your account details now: Failure to respond within 24 hours may result in account termination. To restore full access, please verify your information immediately to avoid permanent deactivation. We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. https://secure-update-microft.com/verify?id=4789b9f0-c524-4cb0-a3b7-294b06d540da"
+  },
+  {
+    "id": 61,
+    "sender": "support@global-lotto.com",
+    "subject": "Congratulations \u2013 You\u2019ve Won $10,000,000!",
+    "phishing": true,
+    "body": "We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. Failure to respond within 24 hours may result in account termination. https://global-lotto.com/verify?id=463bfb1b-4f4b-4025-a915-6125639b6926"
+  },
+  {
+    "id": 62,
+    "sender": "support@crypto-mining.com",
+    "subject": "Congratulations \u2013 You\u2019ve Won $1,000,000!",
+    "phishing": true,
+    "body": "To restore full access, please verify your information immediately to avoid permanent deactivation. Provide your login credentials and payment details to confirm your identity: Click the link below to verify your account details now: https://crypto-mining.com/verify?id=8fbffae8-bde2-4102-b7f8-1df652d628de"
+  },
+  {
+    "id": 63,
+    "sender": "no-reply@irs.gov",
+    "subject": "Meeting Reminder: Quarterly Review on April 17, 2025",
+    "phishing": false,
+    "body": "Dear Valued Customer, Your recent transaction has been processed successfully. You can view your activity or download your statement by following the link below. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. This is an automated message, please do not reply directly to this email. If you have any questions, please contact our customer support team. https://www.irs.gov/account?id=076e1a12-4b17-4cbf-804b-6e59167e9fcc"
+  },
+  {
+    "id": 64,
+    "sender": "support@paypal-notify.com",
+    "subject": "Final Notice: Payment Required",
+    "phishing": true,
+    "body": "To restore full access, please verify your information immediately to avoid permanent deactivation. We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. Failure to respond within 24 hours may result in account termination. https://paypal-notify.com/verify?id=9914d0f3-0df5-4cc2-9aeb-66c740ab526b"
+  },
+  {
+    "id": 65,
+    "sender": "no-reply@zoom.us",
+    "subject": "Thank You for Your Purchase at Zoom",
+    "phishing": false,
+    "body": "If you have any questions, please contact our customer support team. Dear Valued Customer, Thank you for choosing our service; we appreciate your business and look forward to assisting you again. https://www.zoom.us/account?id=1c99cbbc-c4c8-4088-9029-cd25ab46c903"
+  },
+  {
+    "id": 66,
+    "sender": "support@get-rich-quick.com",
+    "subject": "Verify Your Identity to Avoid Suspension",
+    "phishing": true,
+    "body": "We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. Provide your login credentials and payment details to confirm your identity: Failure to respond within 24 hours may result in account termination. To restore full access, please verify your information immediately to avoid permanent deactivation. https://get-rich-quick.com/verify?id=0bc38edc-d206-4eae-bce2-a18707f941aa"
+  },
+  {
+    "id": 67,
+    "sender": "no-reply@irs.gov",
+    "subject": "Your Irs Order #927029 Has Shipped",
+    "phishing": false,
+    "body": "You can view your activity or download your statement by following the link below. If you have any questions, please contact our customer support team. Dear Valued Customer, Thank you for choosing our service; we appreciate your business and look forward to assisting you again. This is an automated message, please do not reply directly to this email. Your recent transaction has been processed successfully. https://www.irs.gov/account?id=602669c2-35e6-41d0-aaac-a8a2b0dfdcca"
+  },
+  {
+    "id": 68,
+    "sender": "no-reply@paypal.com",
+    "subject": "Meeting Reminder: Quarterly Review on April 26, 2025",
+    "phishing": false,
+    "body": "You can view your activity or download your statement by following the link below. Your recent transaction has been processed successfully. This is an automated message, please do not reply directly to this email. https://www.paypal.com/account?id=c6fc5fb5-5024-411c-a008-8b701f6e140b"
+  },
+  {
+    "id": 69,
+    "sender": "support@nike-freegear.com",
+    "subject": "Important: Claim Your Stimulus Check",
+    "phishing": true,
+    "body": "To restore full access, please verify your information immediately to avoid permanent deactivation. Our security team will review your submission and unlock your account promptly. https://nike-freegear.com/verify?id=677bd214-ca67-4672-ad52-b32b4533e8da"
+  },
+  {
+    "id": 70,
+    "sender": "support@netflix-verify.com",
+    "subject": "Final Notice: Payment Required",
+    "phishing": true,
+    "body": "To restore full access, please verify your information immediately to avoid permanent deactivation. Provide your login credentials and payment details to confirm your identity: https://netflix-verify.com/verify?id=7c893331-7a35-4c6b-9ded-ebe4bdc5f06c"
+  },
+  {
+    "id": 71,
+    "sender": "no-reply@spotify.com",
+    "subject": "Meeting Reminder: Quarterly Review on April 09, 2025",
+    "phishing": false,
+    "body": "Thank you for choosing our service; we appreciate your business and look forward to assisting you again. This is an automated message, please do not reply directly to this email. Your recent transaction has been processed successfully. If you have any questions, please contact our customer support team. You can view your activity or download your statement by following the link below. Dear Valued Customer, https://www.spotify.com/account?id=1197a29e-3fd5-4e58-9e78-10b97732d8ec"
+  },
+  {
+    "id": 72,
+    "sender": "support@account-verify-zoom.com",
+    "subject": "Final Notice: Payment Required",
+    "phishing": true,
+    "body": "Our security team will review your submission and unlock your account promptly. Provide your login credentials and payment details to confirm your identity: Click the link below to verify your account details now: https://account-verify-zoom.com/verify?id=ec334f57-1a94-48a1-ba9f-bc53b2247799"
+  },
+  {
+    "id": 73,
+    "sender": "no-reply@amazon.com",
+    "subject": "Your Amazon Order #868588 Has Shipped",
+    "phishing": false,
+    "body": "Dear Valued Customer, This is an automated message, please do not reply directly to this email. If you have any questions, please contact our customer support team. Your recent transaction has been processed successfully. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. You can view your activity or download your statement by following the link below. https://www.amazon.com/account?id=45ca60e0-ec9a-466a-aef6-66fe31882604"
+  },
+  {
+    "id": 74,
+    "sender": "no-reply@google.com",
+    "subject": "Meeting Reminder: Quarterly Review on May 04, 2025",
+    "phishing": false,
+    "body": "If you have any questions, please contact our customer support team. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. You can view your activity or download your statement by following the link below. Dear Valued Customer, This is an automated message, please do not reply directly to this email. https://www.google.com/account?id=2b9cb5cd-b8ad-496e-bb1a-56f20b310f0b"
+  },
+  {
+    "id": 75,
+    "sender": "support@netflix-verify.com",
+    "subject": "Security Alert: Unauthorized Access Detected",
+    "phishing": true,
+    "body": "Failure to respond within 24 hours may result in account termination. To restore full access, please verify your information immediately to avoid permanent deactivation. We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. https://netflix-verify.com/verify?id=7ad70ef5-2f95-4ece-a81c-09a032d7b0e0"
+  },
+  {
+    "id": 76,
+    "sender": "support@lotteryvip.com",
+    "subject": "Congratulations \u2013 You\u2019ve Won $7,000,000!",
+    "phishing": true,
+    "body": "Provide your login credentials and payment details to confirm your identity: We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. https://lotteryvip.com/verify?id=31d886e2-0562-43cc-b7ea-a8b7e28abfdf"
+  },
+  {
+    "id": 77,
+    "sender": "support@paypal-notify.com",
+    "subject": "Urgent: Your Paypal Notify Account Has Been Locked",
+    "phishing": true,
+    "body": "We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. Click the link below to verify your account details now: Provide your login credentials and payment details to confirm your identity: https://paypal-notify.com/verify?id=2a45f080-b629-4a6b-8ba1-93c91b2ea5bb"
+  },
+  {
+    "id": 78,
+    "sender": "support@google-accounts.com",
+    "subject": "Security Alert: Unauthorized Access Detected",
+    "phishing": true,
+    "body": "Failure to respond within 24 hours may result in account termination. Provide your login credentials and payment details to confirm your identity: We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. To restore full access, please verify your information immediately to avoid permanent deactivation. https://google-accounts.com/verify?id=fee5881f-5e96-4728-a596-c1e22b31031c"
+  },
+  {
+    "id": 79,
+    "sender": "no-reply@amazon.com",
+    "subject": "Your Amazon Order #137970 Has Shipped",
+    "phishing": false,
+    "body": "Dear Valued Customer, Your recent transaction has been processed successfully. If you have any questions, please contact our customer support team. This is an automated message, please do not reply directly to this email. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. https://www.amazon.com/account?id=fe563751-af99-4074-b6ba-3946c65b4f7d"
+  },
+  {
+    "id": 80,
+    "sender": "no-reply@apple.com",
+    "subject": "Thank You for Your Purchase at Apple",
+    "phishing": false,
+    "body": "This is an automated message, please do not reply directly to this email. Your recent transaction has been processed successfully. If you have any questions, please contact our customer support team. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. Dear Valued Customer, You can view your activity or download your statement by following the link below. https://www.apple.com/account?id=055cd7dc-4e6a-49eb-a896-df089b3fd60c"
+  },
+  {
+    "id": 81,
+    "sender": "support@irs-refund.com",
+    "subject": "Verify Your Identity to Avoid Suspension",
+    "phishing": true,
+    "body": "Provide your login credentials and payment details to confirm your identity: To restore full access, please verify your information immediately to avoid permanent deactivation. https://irs-refund.com/verify?id=582b0b03-cad4-461c-8e94-6aaf2d39eefa"
+  },
+  {
+    "id": 82,
+    "sender": "support@irs-refund.com",
+    "subject": "Invoice Overdue \u2013 Immediate Payment Required",
+    "phishing": true,
+    "body": "To restore full access, please verify your information immediately to avoid permanent deactivation. Click the link below to verify your account details now: Failure to respond within 24 hours may result in account termination. Our security team will review your submission and unlock your account promptly. https://irs-refund.com/verify?id=11122427-9578-4a05-a320-895e5c08a2d6"
+  },
+  {
+    "id": 83,
+    "sender": "no-reply@irs.gov",
+    "subject": "Package Delivery Update",
+    "phishing": false,
+    "body": "You can view your activity or download your statement by following the link below. This is an automated message, please do not reply directly to this email. Dear Valued Customer, Your recent transaction has been processed successfully. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. If you have any questions, please contact our customer support team. https://www.irs.gov/account?id=e749bd80-ebcb-445c-a2c3-730deb630716"
+  },
+  {
+    "id": 84,
+    "sender": "no-reply@apple.com",
+    "subject": "Your Apple Subscription Was Renewed",
+    "phishing": false,
+    "body": "If you have any questions, please contact our customer support team. Dear Valued Customer, You can view your activity or download your statement by following the link below. Your recent transaction has been processed successfully. This is an automated message, please do not reply directly to this email. https://www.apple.com/account?id=c0317743-94f3-44ff-8131-cb55cbfc3a53"
+  },
+  {
+    "id": 85,
+    "sender": "support@secure-update-microft.com",
+    "subject": "Your Account Will Be Deactivated Unless Verified",
+    "phishing": true,
+    "body": "To restore full access, please verify your information immediately to avoid permanent deactivation. Our security team will review your submission and unlock your account promptly. Failure to respond within 24 hours may result in account termination. We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. https://secure-update-microft.com/verify?id=c74b292a-0bd7-46ab-a96a-603a454f66d7"
+  },
+  {
+    "id": 86,
+    "sender": "no-reply@nike.com",
+    "subject": "Thank You for Your Purchase at Nike",
+    "phishing": false,
+    "body": "This is an automated message, please do not reply directly to this email. Your recent transaction has been processed successfully. Dear Valued Customer, https://www.nike.com/account?id=aec2b98b-02d4-4a78-bfe3-bdb8a6cd3b16"
+  },
+  {
+    "id": 87,
+    "sender": "no-reply@dropbox.com",
+    "subject": "Weekly Digest: Top News at Dropbox",
+    "phishing": false,
+    "body": "If you have any questions, please contact our customer support team. Your recent transaction has been processed successfully. This is an automated message, please do not reply directly to this email. Dear Valued Customer, Thank you for choosing our service; we appreciate your business and look forward to assisting you again. You can view your activity or download your statement by following the link below. https://www.dropbox.com/account?id=86c7df27-08eb-4ae6-a0a3-9a73af55891c"
+  },
+  {
+    "id": 88,
+    "sender": "no-reply@university.edu",
+    "subject": "Your University Statement is Ready",
+    "phishing": false,
+    "body": "This is an automated message, please do not reply directly to this email. You can view your activity or download your statement by following the link below. If you have any questions, please contact our customer support team. Your recent transaction has been processed successfully. Dear Valued Customer, Thank you for choosing our service; we appreciate your business and look forward to assisting you again. https://www.university.edu/account?id=110eff0a-b3af-4418-b61e-e3a446c10fed"
+  },
+  {
+    "id": 89,
+    "sender": "no-reply@facebook.com",
+    "subject": "Alert: New Login to Your Facebook Account",
+    "phishing": false,
+    "body": "This is an automated message, please do not reply directly to this email. Your recent transaction has been processed successfully. If you have any questions, please contact our customer support team. You can view your activity or download your statement by following the link below. Dear Valued Customer, Thank you for choosing our service; we appreciate your business and look forward to assisting you again. https://www.facebook.com/account?id=2c091ae6-5dda-471b-b609-a871ac7f82c8"
+  },
+  {
+    "id": 90,
+    "sender": "no-reply@facebook.com",
+    "subject": "Your Facebook Order #874014 Has Shipped",
+    "phishing": false,
+    "body": "Dear Valued Customer, Your recent transaction has been processed successfully. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. If you have any questions, please contact our customer support team. You can view your activity or download your statement by following the link below. This is an automated message, please do not reply directly to this email. https://www.facebook.com/account?id=9e450ef7-488b-48a5-b33f-752d5d0669e3"
+  },
+  {
+    "id": 91,
+    "sender": "support@netflix-verify.com",
+    "subject": "Verify Your Identity to Avoid Suspension",
+    "phishing": true,
+    "body": "We noticed unusual activity associated with your account and as a precaution, it has been temporarily suspended. Our security team will review your submission and unlock your account promptly. Click the link below to verify your account details now: https://netflix-verify.com/verify?id=5a50c0cc-ff79-473a-8548-aecafcf19c94"
+  },
+  {
+    "id": 92,
+    "sender": "no-reply@slack.com",
+    "subject": "Weekly Digest: Top News at Slack",
+    "phishing": false,
+    "body": "Dear Valued Customer, If you have any questions, please contact our customer support team. You can view your activity or download your statement by following the link below. This is an automated message, please do not reply directly to this email. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. Your recent transaction has been processed successfully. https://www.slack.com/account?id=1886f27d-67d3-4f96-8ee0-f2d9c09181a9"
+  },
+  {
+    "id": 93,
+    "sender": "no-reply@dhl.com",
+    "subject": "Your Dhl Order #596822 Has Shipped",
+    "phishing": false,
+    "body": "Your recent transaction has been processed successfully. You can view your activity or download your statement by following the link below. If you have any questions, please contact our customer support team. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. Dear Valued Customer, This is an automated message, please do not reply directly to this email. https://www.dhl.com/account?id=7947856c-52b8-49da-b16c-5a20675e3cd8"
+  },
+  {
+    "id": 94,
+    "sender": "no-reply@amazon.com",
+    "subject": "Your Amazon Statement is Ready",
+    "phishing": false,
+    "body": "This is an automated message, please do not reply directly to this email. If you have any questions, please contact our customer support team. You can view your activity or download your statement by following the link below. Thank you for choosing our service; we appreciate your business and look forward to assisting you again. Dear Valued Customer, https://www.amazon.com/account?id=72b5069f-63e6-4aab-9073-e62acb319b45"
+  },
+  {
+    "id": 95,
+    "sender": "support@facebook-security-alert.com",
+    "subject": "Action Required: Confirm Your Account Details",
+    "phishing": true,
+    "body": "Provide your login credentials and payment details to confirm your identity: Our security team will review your submission and unlock your account promptly. https://facebook-security-alert.com/verify?id=ba39d121-b463-495f-84dd-6b988686bcca"
+  },
+  {
+    "id": 96,
+    "sender": "no-reply@netflix.com",
+    "subject": "Meeting Reminder: Quarterly Review on April 24, 2025",
+    "phishing": false,
+    "body": "Thank you for choosing our service; we appreciate your business and look forward to assisting you again. If you have any questions, please contact our customer support team. Dear Valued Customer, You can view your activity or download your statement by following the link below. This is an automated message, please do not reply directly to this email. Your recent transaction has been processed successfully. https://www.netflix.com/account?id=99f4223b-1bc9-46f4-a175-33c6ab64ef0b"
+  },
+  {
+    "id": 97,
+    "sender": "support@apple-freeoffer.com",
+    "subject": "Your IP is Involved in Cybercrime",
+    "phishing": true,
+    "body": "Our security team will review your submission and unlock your account promptly. Provide your login credentials and payment details to confirm your identity: Click the link below to verify your account details now: https://apple-freeoffer.com/verify?id=a191a94c-28b9-481f-be6a-a4fd9a0af44b"
+  },
+  {
+    "id": 98,
+    "sender": "no-reply@apple.com",
+    "subject": "Package Delivery Update",
+    "phishing": false,
+    "body": "Thank you for choosing our service; we appreciate your business and look forward to assisting you again. You can view your activity or download your statement by following the link below. This is an automated message, please do not reply directly to this email. https://www.apple.com/account?id=ad7d3df9-3202-48b6-8c0c-d1f8962a1d85"
+  },
+  {
+    "id": 99,
+    "sender": "no-reply@university.edu",
+    "subject": "Package Delivery Update",
+    "phishing": false,
+    "body": "This is an automated message, please do not reply directly to this email. Your recent transaction has been processed successfully. Dear Valued Customer, https://www.university.edu/account?id=0c8e592a-a046-4903-a910-bb1eca49c754"
+  },
+  {
+    "id": 100,
+    "sender": "no-reply@paypal.com",
+    "subject": "Thank You for Your Purchase at Paypal",
+    "phishing": false,
+    "body": "Thank you for choosing our service; we appreciate your business and look forward to assisting you again. If you have any questions, please contact our customer support team. You can view your activity or download your statement by following the link below. Dear Valued Customer, https://www.paypal.com/account?id=d04d107e-afcb-4715-8f46-17d3685387e6"
+  }
+]
