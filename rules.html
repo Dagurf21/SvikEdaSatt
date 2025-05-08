@@ -1,113 +1,106 @@
 <!DOCTYPE html>
 <html lang="is">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leikreglur – Svik eða Satt?</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    /* Rules Page Styling */
-    .rules-hero {
-      background: #f0f0f0;
-      padding: 2rem;
-      text-align: center;
-      border-radius: 8px;
-      margin-bottom: 2rem;
-    }
-    .rules-hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .rules-hero p {
-      font-size: 1.1rem;
-      color: #555;
-    }
-    .rules-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-    }
-    .rule-item {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-    .rule-item h2 {
-      font-size: 1.25rem;
-      margin-bottom: 0.75rem;
-      color: #333;
-    }
-    .rule-item p,
-    .rule-item ul {
-      font-size: 0.95rem;
-      color: #444;
-      line-height: 1.5;
-    }
-    .rule-item ul {
-      padding-left: 1.2rem;
-    }
+    /* Reset & Base */
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    html, body { font-family:'Lato', Arial, sans-serif; background:#f9f9f9; color:#333; overflow-x:hidden; }
+    a { text-decoration:none; color:inherit; }
+    .container { max-width:960px; margin: auto; padding:1rem; }
+
+    /* Header (fixed) */
+    header.global-header { position:fixed; top:0; left:0; width:100%; height:80px; display:flex; align-items:center; justify-content:space-between; padding:0 2rem; background:#fff; box-shadow:0 2px 4px rgba(0,0,0,0.1); z-index:1000; }
+    header.global-header .logo { display:flex; align-items:center; }
+    header.global-header .logo img { height:40px; margin-right:0.5rem; }
+    header.global-header .logo span { font-size:1.5rem; font-weight:700; color:#007bff; }
+    header.global-header nav ul { list-style:none; display:flex; gap:1rem; }
+    header.global-header nav ul li a { padding:0.5rem; font-weight:600; transition:background 0.2s; }
+    header.global-header nav ul li a:hover, header.global-header nav ul li a.active { background:#007bff; color:#fff; border-radius:4px; }
+    main { padding-top:100px; }
+
+    /* Hero */
+    .rules-hero { background:#007bff; color:#fff; text-align:center; margin-top: 80px; padding:4rem 1rem; margin-bottom:3rem; }
+    .rules-hero h1 { font-size:2.5rem; margin-bottom:1rem; }
+    .rules-hero p { font-size:1.1rem; max-width:600px; margin:auto; line-height:1.6; }
+
+    /* Steps Grid */
+    .steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:2rem; margin-bottom:3rem; }
+    .step-card { background:#fff; border-radius:8px; padding:2rem 1rem; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,0.1); position:relative; }
+    .step-card::before { content:attr(data-step); position:absolute; top:-20px; left:50%; transform:translateX(-50%); background:#007bff; color:#fff; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; }
+    .step-card h3 { margin:1rem 0 0.5rem; font-size:1.25rem; color:#007bff; }
+    .step-card p { font-size:0.95rem; line-height:1.5; color:#555; }
+
+    /* Details Panel */
+    .details { background:#fff; padding:2rem; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); margin-bottom:3rem; }
+    .details h2 { margin-bottom:1rem; font-size:1.5rem; color:#007bff; }
+    .details ul { list-style:disc inside; line-height:1.6; }
+    .details ul li { margin-bottom:0.75rem; }
+
+    /* Footer */
+    footer { text-align:center; padding:2rem 1rem; background:#fff; border-top:1px solid #eee; font-size:0.9rem; color:#777; }
   </style>
 </head>
 <body>
-  <!-- Global Header -->
   <header class="global-header">
     <a href="index.html">
         <div class="logo">
-            <img src="assets/icons/logoSvikEdaSatt.png" alt="Svik eða Satt logo" />
-            <span>Svik eða Satt?</span>    
-        </div>    
+            <img src="assets/icons/logoSvikEdaSatt.png" alt="Logo" />
+            <span>Svik eða Satt?</span>
+        </div>
     </a>
     <nav>
-        <ul>
-            <li><a href="about.html">Um okkur</a></li>
-            <li><a href="contact.html">Hafðu samband</a></li>
-            <li><a href="rules.html">Leikreglur</a></li>
-            <li><a href="fraedsla.html">Fræðsla</a></li>
-            <li><a href="subscribe.html">Áskrift</a></li>
-            <li><a href="play.html" class="btn">Spilaðu Núna !</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Heim</a></li>
+        <li><a href="about.html">Um okkur</a></li>
+        <li><a href="contact.html">Hafðu samband</a></li>
+        <li><a href="rules.html" class="active">Leikreglur</a></li>
+        <li><a href="fraedsla.html">Fræðsla</a></li>
+        <li><a href="subscribe.html">Áskrift</a></li>
+        <li><a href="play.html" class="btn">Spilaðu Núna!</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
   <main class="container">
+    <!-- Hero -->
     <section class="rules-hero">
       <h1>Leikreglur</h1>
-      <p>Þú hefur <strong>60 sekúndur</strong> til að þrífa pósthólfið fyrir phishing-emails. Hver rétt ráðstöfun gefur þér stig, en rangt mark er refsipunktur.</p>
+      <p>Þú hefur 60 sekúndur til að greina phishing-pósta. Merktu þá sem svik og finndu öryggi í netheimum!</p>
     </section>
 
-    <section class="rules-list">
-      <div class="rule-item">
-        <h2>Markmið leiksins</h2>
-        <p>Flokkaðu <strong>10 tölvupósta</strong>: merktu phishing sem rusl og skildu eftir annars eðlileg.
-        </p>
+    <!-- Steps -->
+    <section class="steps">
+      <div class="step-card" data-step="1">
+        <h3>Lesa</h3>
+        <p>Skoðaðu hver sendir, efni tölvupóstsins og hvaða slóð hann vísar á.</p>
       </div>
-      <div class="rule-item">
-        <h2>Stigagjöf</h2>
-        <ul>
-          <li><strong>+10 stig</strong> fyrir hvert phishing-merkt email</li>
-          <li><strong>-5 stig</strong> fyrir hvert rangt margarlett email</li>
-        </ul>
+      <div class="step-card" data-step="2">
+        <h3>Ákvarða</h3>
+        <p>Ákveddu hvort pósturinn er raunverulegur eða tilraun til svika.</p>
       </div>
-      <div class="rule-item">
-        <h2>Tímalína</h2>
-        <p>Þú hefur <strong>60 sekúndur</strong> á hvern leik. Þegar tíminn rennur út endar leikurinn sjálfkrafa.
-        </p>
+      <div class="step-card" data-step="3">
+        <h3>Merking</h3>
+        <p>Ýttu á „Rusl“ ef hann er phishing, annars skildu hann eftir í pósthólfinu.</p>
       </div>
-      <div class="rule-item">
-        <h2>Umferðir & Ógnvörn</h2>
-        <p>Spilaðu í allt að <strong>10 umferðir</strong>. Hver næsta umferð verður flóknari með raunhæfum phishing-dæmum.
-        </p>
+      <div class="step-card" data-step="4">
+        <h3>Stig</h3>
+        <p>+10 fyrir rétt merkt, -5 fyrir rangt. Leikurinn endar þegar allir eru klárir.</p>
       </div>
-      <div class="rule-item">
-        <h2>Vínarvörður</h2>
-        <p>Leikurinn notar raunheimssýnishorn sem innihalda falskar beiðnir, illkvittnislegar slóðir og grunsamlegar viðaukar.</p>
-      </div>
+    </section>
+
+    <!-- Detailed Rules -->
+    <section class="details">
+      <h2>Yfirlit & Skilmálar</h2>
+      <ul>
+        <li><strong>Tími:</strong> 60 sekúndur í hverri umferð.</li>
+        <li><strong>Umferðir:</strong> Spilaðu í allt að 10 umferðir með mismunandi áskorunum.</li>
+        <li><strong>Stigagjöf:</strong> +10 stig fyrir hverja rétta sviksímerki, -5 stig fyrir hvert rangt.</li>
+        <li><strong>Auka:</strong> Þú getur endurhlaðið eða deilt árangri eftir hverja umferð.</li>
+      </ul>
     </section>
   </main>
 

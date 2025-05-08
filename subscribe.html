@@ -1,84 +1,193 @@
 <!DOCTYPE html>
 <html lang="is">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Áskriftapakkar – Svik eða Satt?</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Áskrift – Svik eða Satt?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset & Base */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { font-family: 'Lato', sans-serif; background: #f9f9f9; color: #333; overflow-x: hidden; }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 960px; margin: auto; padding: 1rem; }
+
+    /* Fixed Header */
+    header.global-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    header.global-header .logo { display: flex; align-items: center; }
+    header.global-header .logo img { height: 40px; margin-right: 0.5rem; }
+    header.global-header .logo span { font-size: 1.5rem; font-weight: 700; color: #007bff; }
+    header.global-header nav ul { list-style: none; display: flex; gap: 1rem; }
+    header.global-header nav ul li a {
+      padding: 0.5rem;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    header.global-header nav ul li a:hover,
+    header.global-header nav ul li a.active {
+      background: #007bff;
+      color: #fff;
+      border-radius: 4px;
+    }
+    main { padding-top: 100px; }
+
+    /* Subscription Hero */
+    .sub-hero {
+      background: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem;
+      margin: 80px 0 2rem; /* offset for fixed header */
+      border-radius: 8px;
+    }
+    .sub-hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .sub-hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    /* Plans Grid */
+    .plans-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    .plan-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 2rem 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s, border-color 0.2s;
+      border: 2px solid transparent;
+      text-align: center;
+    }
+    .plan-card:hover {
+      transform: translateY(-5px);
+      border-color: #007bff;
+    }
+    .plan-card h2 { font-size: 1.5rem; margin-bottom: 0.5rem; color: #007bff; }
+    .plan-card .price { font-size: 2rem; margin: 1rem 0; }
+    .plan-card ul { list-style: disc inside; text-align: left; padding-left: 1rem; }
+    .plan-card ul li { margin-bottom: 0.5rem; }
+    .plan-card button {
+      margin-top: 1rem;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .plan-card button:hover { background: #0056b3; }
+
+    /* Contact Note */
+    .contact-note { text-align: center; font-size: 0.9rem; color: #555; margin-bottom: 3rem; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #fff;
+      border-top: 1px solid #eee;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-<!-- Global Header -->
-<header class="global-header">
+  <header class="global-header">
     <a href="index.html">
         <div class="logo">
-            <img src="assets/icons/logoSvikEdaSatt.png" alt="Svik eða Satt logo" />
-            <span>Svik eða Satt?</span>    
-        </div>    
+            <img src="assets/icons/logoSvikEdaSatt.png" alt="Logo"/>
+            <span>Svik eða Satt?</span>
+        </div>
     </a>
     <nav>
-        <ul>
-            <li><a href="about.html">Um okkur</a></li>
-            <li><a href="contact.html">Hafðu samband</a></li>
-            <li><a href="rules.html">Leikreglur</a></li>
-            <li><a href="fraedsla.html">Fræðsla</a></li>
-            <li><a href="subscribe.html">Áskrift</a></li>
-            <li><a href="play.html" class="btn">Spilaðu Núna !</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Heim</a></li>
+        <li><a href="about.html">Um okkur</a></li>
+        <li><a href="contact.html">Hafðu samband</a></li>
+        <li><a href="rules.html">Leikreglur</a></li>
+        <li><a href="fraedsla.html">Fræðsla</a></li>
+        <li><a href="subscribe.html" class="active">Áskrift</a></li>
+        <li><a href="play.html" class="btn">Spilaðu Núna!</a></li>
+      </ul>
     </nav>
-</header>
-<div class="container">
-    <h1>Áskriftapakkar</h1>
-    <div class="plans-grid">
-        <div class="plan-card">
-            <h2>Fræðslupakki</h2>
-            <p class="subtext">einstaklingur</p>
-            <p class="price">1990 <span>kr/mán</span></p>
-            <ul>
-                <li>Aðgangur að öllum grunnleikjum og kvissum</li>
-                <li>Mánaðarlegar uppfærslur með nýjum spurningum</li>
-                <li>Fræðslugreinar og ráð</li>
-            </ul>
-        </div>
-        <div class="plan-card">
-            <h2>Teymisfræðsla</h2>
-            <p class="subtext">lítil fyrirtæki/skólar</p>
-            <p class="price">5990 <span>kr/mán</span></p>
-            <ul>
-                <li>Allt úr Fræðslupakka</li>
-                <li>Allt að 10 notendur</li>
-                <li>Sérvaldar áskoranir fyrir teymi</li>
-                <li>Einföld stjórnendasýn</li>
-            </ul>
-        </div>
-        <div class="plan-card">
-            <h2>Fyrirtækjapakki</h2>
-            <p class="subtext">miðalstór fyrirtæki/skólar</p>
-            <p class="price">12990 <span>kr/mán</span></p>
-            <ul>
-                <li>Allt úr Teymisfræðslu</li>
-                <li>Sérsniðnar áskoranir eftir starfsgreinum</li>
-                <li>Framvinduskýrslur</li>
-                <li>Vefnámskeið og ráðleggingar</li>
-            </ul>
-        </div>
-        <div class="plan-card">
-            <h2>Framúrskarandi pakki</h2>
-            <p class="subtext">stór fyrirtæki/skólar</p>
-            <p class="price">19990 <span>kr/mán</span></p>
-            <ul>
-                <li>Allt úr Fyrirtækjapakkanum</li>
-                <li>Sérsniðin áskorunagerð</li>
-                <li>Ársskýrsla um árangur</li>
-                <li>Forgangsréttur að nýjungum</li>
-                <li>Sérstakur stuðningur</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<footer>
+  </header>
+  <main class="container">
+    <!-- Hero -->
+    <section class="sub-hero">
+      <h1>Áskriftapakkar</h1>
+      <p>Veldu áskrift sem hentar þínum þörfum – frá fræðslupakka fyrir einstaklinga til fullkomins fyrirtækjapakka.</p>
+    </section>
+    <!-- Plans Grid -->
+    <section class="plans-grid">
+      <div class="plan-card">
+        <h2>Fræðslupakki</h2>
+        <p class="price">1990 kr/mán</p>
+        <ul>
+          <li>Aðgangur að öllum grunnleikjum</li>
+          <li>Mánuðarlegar uppfærslur</li>
+          <li>Fræðslugreinar og ráð</li>
+        </ul>
+        <button>Velja þetta</button>
+      </div>
+      <div class="plan-card">
+        <h2>Teymisfræðsla</h2>
+        <p class="price">5990 kr/mán</p>
+        <ul>
+          <li>Inniheldur Fræðslupakka</li>
+          <li>Allt að 10 notendur</li>
+          <li>Stjórnendasýn</li>
+        </ul>
+        <button>Velja þetta</button>
+      </div>
+      <div class="plan-card">
+        <h2>Fyrirtækjapakki</h2>
+        <p class="price">12990 kr/mán</p>
+        <ul>
+          <li>Inniheldur Teymisfræðslu</li>
+          <li>Framvinduskýrslur</li>
+          <li>Vefnámskeið</li>
+        </ul>
+        <button>Velja þetta</button>
+      </div>
+      <div class="plan-card">
+        <h2>Forgangsréttur</h2>
+        <p class="price">19990 kr/mán</p>
+        <ul>
+          <li>Allt úr Fyrirtækjapakkanum</li>
+          <li>Ársskýrsla & sérvalinn stuðningur</li>
+          <li>Forgangsréttur að nýjungum</li>
+        </ul>
+        <button>Velja þetta</button>
+      </div>
+    </section>
+    <p class="contact-note">Fyrir sérsniðna lausn, hafðu samband á <a href="mailto:info@svikedasatt.is">info@svikedosatt.is</a>.</p>
+  </main>
+  <footer>
     <p>&copy; 2025 Svik eða Satt?</p>
-</footer>
+  </footer>
 </body>
 </html>

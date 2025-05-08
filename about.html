@@ -1,76 +1,186 @@
 <!DOCTYPE html>
 <html lang="is">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Um okkur – Svik eða Satt?</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Um okkur – Svik eða Satt?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Base & Reset */
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    html, body { overflow-x:hidden; font-family:'Lato', sans-serif; background:#f9f9f9; color:#333; }
+    a { text-decoration:none; color:inherit; }
+    .container { max-width:960px; margin:auto; padding:1rem; }
+
+    /* Fixed Header */
+    header.global-header {
+      position:fixed; top:0; left:0; width:100%; height:80px;
+      display:flex; align-items:center; justify-content:space-between;
+      padding:0 2rem; background:#fff;
+      box-shadow:0 2px 4px rgba(0,0,0,0.1); z-index:1000;
+    }
+    header.global-header .logo { display:flex; align-items:center; }
+    header.global-header .logo img { height:40px; margin-right:0.5rem; }
+    header.global-header .logo span { font-size:1.5rem; font-weight:700; color:#007bff; }
+    header.global-header nav ul { list-style:none; display:flex; gap:1rem; }
+    header.global-header nav ul li a { padding:0.5rem; font-weight:600; transition:background 0.2s; }
+    header.global-header nav ul li a:hover, header.global-header nav ul li a.active { background:#007bff; color:#fff; border-radius:4px; }
+    main { padding-top:100px; }
+
+    /* Hero Section */
+    .about-hero { position:relative; text-align:center; margin-bottom:3rem; }
+    .about-hero img { width:100%; border-radius:8px; }
+    .about-hero .overlay { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); }
+    .about-hero h1 { font-size:2.5rem; background:rgba(0,0,0,0.6); color:#fff; padding:0.5rem 1rem; border-radius:4px; }
+
+    /* Info Sections */
+    .info-section { display:flex; flex-wrap:wrap; gap:2rem; align-items:center; margin-bottom:3rem; }
+    .info-section.alt .text { order:2; }
+    .text, .image { flex:1 1 300px; }
+    .text { background:#fff; padding:2rem; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+    .text h2 { margin-bottom:1rem; color:#007bff; }
+    .text p { margin-bottom:1rem; line-height:1.6; }
+    .image img { width:100%; border-radius:8px; }
+
+    /* Team Section - Filterable Tabs + Grid */
+    .team { margin-bottom:3rem; }
+    .team h2 { text-align:center; margin-bottom:1rem; color:#007bff; }
+    .team-tabs { display:flex; justify-content:center; flex-wrap:wrap; gap:1rem; margin-bottom:2rem; }
+    .team-tabs button {
+      background:transparent; border:2px solid #007bff; color:#007bff;
+      padding:0.5rem 1rem; border-radius:20px; cursor:pointer;
+      transition:background 0.2s, color 0.2s;
+    }
+    .team-tabs button.active,
+    .team-tabs button:hover { background:#007bff; color:#fff; }
+    .team-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:2rem; }
+    .team-card { background:#fff; padding:1rem; border-radius:8px; text-align:center;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1); transition:transform 0.2s;
+    }
+    .team-card:hover { transform:translateY(-5px); }
+    .team-card img { width:100px; height:100px; border-radius:50%; object-fit:cover; margin-bottom:0.75rem; }
+    .team-card h3 { font-size:1rem; margin-bottom:0.25rem; }
+    .team-card p { font-size:0.85rem; color:#555; }
+
+    /* Footer */
+    footer { text-align:center; padding:2rem 1rem; background:#fff; border-top:1px solid #eee; font-size:0.9rem; color:#777; }
+  </style>
 </head>
 <body>
-<!-- Global Header -->
-<header class="global-header">
+  <header class="global-header">
     <a href="index.html">
         <div class="logo">
-            <img src="assets/icons/logoSvikEdaSatt.png" alt="Svik eða Satt logo" />
-            <span>Svik eða Satt?</span>    
-        </div>    
+            <img src="assets/icons/logoSvikEdaSatt.png" alt="Logo" />
+            <span>Svik eða Satt?</span>
+        </div>
     </a>
     <nav>
-        <ul>
-            <li><a href="about.html">Um okkur</a></li>
-            <li><a href="contact.html">Hafðu samband</a></li>
-            <li><a href="rules.html">Leikreglur</a></li>
-            <li><a href="fraedsla.html">Fræðsla</a></li>
-            <li><a href="subscribe.html">Áskrift</a></li>
-            <li><a href="play.html" class="btn">Spilaðu Núna !</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Heim</a></li>
+        <li><a href="about.html" class="active">Um okkur</a></li>
+        <li><a href="contact.html">Hafðu samband</a></li>
+        <li><a href="rules.html">Leikreglur</a></li>
+        <li><a href="fraedsla.html">Fræðsla</a></li>
+        <li><a href="subscribe.html">Áskrift</a></li>
+        <li><a href="play.html" class="btn">Spilaðu Núna!</a></li>
+      </ul>
     </nav>
-</header>
-
-<!-- Hero Section -->
-<section class="about-hero">
-    <div class="label">Um okkur</div>
-    <div class="content">
-        Við erum teymin sem sameinar þekkingu úr lögfræði, tóltenhamgrædi og tækniheiminum með sameiginlegu markmiði: að gera fræðslu um netöryggi aðgengilega, gagnvirka og skemmtilega.
-    </div>
-</section>
-
-<!-- Team Section -->
-<section class="team-section">
-    <h2>Teymið</h2>
-    <div class="team-grid">
-        <!-- Repeat this card for each member -->
-        <div class="team-card">
-            <img src="assets/photos/dagur_portrait.jpg" alt="Dagur Freyr Guðbrandsson">
-            <h3>Dagur Freyr Guðbrandsson</h3>
-            <p>Tölvunarfræðingur</p>
-        </div>
-        <div class="team-card">
-            <img src="assets/photos/hilmir_portrait.png" alt="Hilmir Þór Sífjárson Petersen">
-            <h3>Hilmir Þór Sífjárson Petersen</h3>
-            <p>Tölvunarfræðingur</p>
-        </div>
-        <div class="team-card">
-            <img src="assets/photos/petur_portrait.jpg" alt="Pétur Freyr Sigurjónsson">
-            <h3>Pétur Freyr Sigurjónsson</h3>
-            <p>Tæknifræðingur</p>
-        </div>
-        <div class="team-card">
-            <img src="assets/photos/tinna_portrait.png" alt="Tinna Rún Jónasdóttir">
-            <h3>Tinna Rún Jónasdóttir</h3>
-            <p>Lögfræðingur</p>
-        </div>
-        <div class="team-card">
-            <img src="assets/photos/sonja_portrait.png" alt="Sonja Lind Sigsteinsdóttir">
+  </header>
+  <main class="container">
+    <!-- Hero -->
+    <section class="about-hero">
+      <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1600&q=80" alt="About Hero" />
+      <div class="overlay"><h1>Um okkur</h1></div>
+    </section>
+    <!-- Our Mission -->
+    <section class="info-section alt">
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=800&q=80" alt="Mission" />
+      </div>
+      <div class="text">
+        <h2>Meginmarkmið okkar</h2>
+        <p>Með „Svik eða Satt?“ ætlum við að gera netöryggi aðgengilegt og áhugavert fyrir alla. Leikurinn hjálpar þér að þjálfa sjón þína á phishing-árásum í öruggu, gagnvirku umhverfi.</p>
+      </div>
+    </section>
+    <!-- Who We Are -->
+    <section class="info-section">
+      <div class="text">
+        <h2>Hverjir erum við?</h2>
+        <p>Við erum teymi sérfræðinga úr netöryggis- og hönnunargeiranum sem unnið hefur saman til að búa til skemmtilegan og fræðandi leik um phishing.</p>
+      </div>
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1559028012-481ea2b9cdd6?auto=format&fit=crop&w=800&q=80" alt="Teamwork" />
+      </div>
+    </section>
+    <!-- Team Section with Tabs -->
+    <section class="team">
+      <h2>Liðið okkar</h2>
+      <div class="team-tabs">
+        <button class="active" data-group="All">Allt</button>
+        <button data-group="Leadership">Leiðtogahlutverk</button>
+        <button data-group="Dev">Þróun</button>
+        <button data-group="Design">Hönnun</button>
+        <button data-group="Content">Innihald</button>
+      </div>
+      <div class="team-grid" id="teamGrid">
+    <!-- Sample team members with data-group attribute -->  
+        <a href="https://www.linkedin.com/in/dagur-freyr-g-a7480323a/">
+            <div class="team-card" data-group="Leadership">
+                <img src="assets/photos/dagur_portrait.jpg" alt="Dagur Freyr Guðbrandsson" />
+                <h3>Dagur Freyr Guðbrandsson</h3>
+                <p>Tölvunarfræðinemi</p>
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/in/hilmir-petersen-122547223/">
+            <div class="team-card" data-group="Dev">
+                <img src="assets/photos/hilmir_portrait.png" alt="Hilmir Þór Sifjarson Petersen" />
+                <h3>Hilmir Þór Sifjarson Petersen</h3>
+                <p>Tölvunarfræðinemi</p>
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/in/p%C3%A9tur-freyr-sigurj%C3%B3nsson-27658823b/">
+            <div class="team-card" data-group="Design">
+                <img src="assets/photos/petur_portrait.jpg" alt="Pétur Freyr Sigurjónsson" />
+                <h3>Pétur Freyr Sigurjónsson</h3>
+                <p>Tæknifræðinemi</p>
+            </div>
+        </a>
+    <a href="https://www.linkedin.com/in/sonja-lind-sigsteinsd%C3%B3ttir-091a08364/">
+        <div class="team-card" data-group="Content">
+            <img src="assets/photos/sonja_portrait.png" alt="Sonja Lind Sigsteinsdóttir" />
             <h3>Sonja Lind Sigsteinsdóttir</h3>
-            <p>Tölvunarfræðingur</p>
+            <p>Tölvunarfræðinemi</p>
         </div>
-    </div>
-</section>
+    </a>
 
-<footer>
+    <a href="https://www.linkedin.com/in/tinna-r%C3%BAn-j%C3%B3nasd%C3%B3ttir-030599310/">
+        <div class="team-card" data-group="Leadership">
+            <img src="assets/photos/tinna_portrait.png" alt="Tinna Rún Jónasdóttir" />
+            <h3>Tinna Rún Jónasdóttir</h3>
+            <p>Lögfræðinemi</p>
+        </div>
+    </a>
+
+      </div>
+    </section>
+  </main>
+  <footer>
     <p>&copy; 2025 Svik eða Satt?</p>
-</footer>
+  </footer>
+  <script>
+    // Tab filtering logic
+    const tabs = document.querySelectorAll('.team-tabs button');
+    const cards = document.querySelectorAll('.team-card');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const group = tab.dataset.group;
+        cards.forEach(card => {
+          card.style.display = (group === 'All' || card.dataset.group === group) ? 'block' : 'none';
+        });
+      });
+    });
+  </script>
 </body>
 </html>

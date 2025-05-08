@@ -1,56 +1,193 @@
 <!DOCTYPE html>
 <html lang="is">
 <head>
-    <meta charset="UTF-8">  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Svik eða Satt? – Spot the Phish</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Svik eða Satt? – Spot the Phish</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    /* Global Box Sizing & Remove Horizontal Scroll */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; overflow-x: hidden; }
+
+    /* Body Styling and top padding to accommodate fixed header */
+    body {
+      font-family: 'Lato', Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      padding-top: 80px; /* height of fixed header */
+    }
+
+    /* Fixed Header */
+    header.global-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    header.global-header .logo {
+      display: flex;
+      align-items: center;
+    }
+    header.global-header .logo img {
+      height: 40px;
+      margin-right: 0.5rem;
+    }
+    header.global-header .logo span {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #007bff;
+    }
+    header.global-header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+    header.global-header nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      padding: 0.5rem;
+      transition: background 0.2s;
+    }
+    header.global-header nav ul li a:hover,
+    header.global-header nav ul li a.active {
+      background: #007bff;
+      color: #fff;
+      border-radius: 4px;
+    }
+
+    /* Button Styles */
+    .btn {
+      background: #007bff;
+      color: #fff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #0056b3; }
+
+    /* Main Container */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: #fff;
+      padding: 4rem 1rem;
+      border-radius: 8px;
+      margin-bottom: 3rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+
+    /* Features Section */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    .feature-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .feature-card:hover { transform: translateY(-5px); }
+    .feature-card img { width: 50px; margin-bottom: 1rem; }
+    .feature-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: #333; }
+    .feature-card p { font-size: 0.9rem; color: #666; line-height: 1.4; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #fff;
+      margin-top: 3rem;
+      color: #777;
+      font-size: 0.9rem;
+      border-top: 1px solid #eee;
+    }
+  </style>
 </head>
 <body>
-<!-- Global Header -->
-<header class="global-header">
-    <a href="index.html">
-        <div class="logo">
-            <img src="assets/icons/logoSvikEdaSatt.png" alt="Svik eða Satt logo" />
-            <span>Svik eða Satt?</span>    
-        </div>    
+  <header class="global-header">
+    <a href="index.html" style="text-decoration:none;"> 
+      <div class="logo">
+        <img src="assets/icons/logoSvikEdaSatt.png" alt="Logo">
+        <span>Svik eða Satt?</span>
+      </div>
     </a>
     <nav>
-        <ul>
-            <li><a href="about.html">Um okkur</a></li>
-            <li><a href="contact.html">Hafðu samband</a></li>
-            <li><a href="rules.html">Leikreglur</a></li>
-            <li><a href="fraedsla.html">Fræðsla</a></li>
-            <li><a href="subscribe.html">Áskrift</a></li>
-            <li><a href="play.html" class="btn">Spilaðu Núna !</a></li>
-        </ul>
+      <ul>
+        <li><a href="about.html">Um okkur</a></li>
+        <li><a href="contact.html">Hafðu samband</a></li>
+        <li><a href="rules.html">Leikreglur</a></li>
+        <li><a href="fraedsla.html">Fræðsla</a></li>
+        <li><a href="subscribe.html">Áskrift</a></li>
+        <li><a href="play.html" class="btn">Spilaðu Núna!</a></li>
+      </ul>
     </nav>
-</header>
-
-<div class="container">
-    <header>
-        <h1>Svik eða Satt?</h1>
-        <p>Think you can spot a phishing email? Prove it now.</p>
-        <a class="btn" href="play.html">Spila núna</a>
-    </header>
-
-    <section id="how-it-works">
-        <h2>How It Works</h2>
-        <ol>
-            <li><strong>Read</strong> – Scan sender, subject, links</li>
-            <li><strong>Decide</strong> – Trash phishing emails</li>
-            <li><strong>Score</strong> – Earn points for each catch</li>
-        </ol>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <h1>Svik eða Satt?</h1>
+      <p>Hefur þú hausinn klár? Þú hefur 60 sekúndur til að finna phishing-póstana áður en það er of seint!</p>
+      <a href="play.html" class="btn btn-lg">Spilaðu Núna</a>
     </section>
-
-    <section id="why-play">
-        <h2>Why Play?</h2>
-        <p>Phishing attacks are on the rise—test your skills in a safe, fun environment.</p>
+    <section class="features">
+      <div class="feature-card">
+        <img src="https://img.icons8.com/ios-filled/50/007bff/visible.png" alt="Read Icon">
+        <h3>Lesa</h3>
+        <p>Skoðaðu sendanda, efni og slóðir til að finna vísbendingar.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://img.icons8.com/ios-filled/50/007bff/decision.png" alt="Decide Icon">
+        <h3>Ákvarða</h3>
+        <p>Hefurðu rétt? Hreinsaðu ruslið eða skildu góðkuðin eftir.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://img.icons8.com/ios-filled/50/007bff/scorecard.png" alt="Score Icon">
+        <h3>Stig</h3>
+        <p>Söfnun stig; hver rétt greinandi gefur þér aukastig!</p>
+      </div>
     </section>
-</div>
-
-<footer>
+  </main>
+  <footer>
     <p>&copy; 2025 Svik eða Satt?</p>
-</footer>
+  </footer>
 </body>
 </html>

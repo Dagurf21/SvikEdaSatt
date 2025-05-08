@@ -1,80 +1,109 @@
 <!DOCTYPE html>
 <html lang="is">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Fræðsla – Svik eða Satt?</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fræðsla – Svik eða Satt?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset & Base */
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    html, body { font-family:'Lato', Arial, sans-serif; background:#f9f9f9; color:#333; overflow-x:hidden; }
+    a { text-decoration:none; color:inherit; }
+    .container { max-width:960px; margin:auto; padding:1rem; }
+
+    /* Header */
+    header.global-header { position:fixed; top:0; left:0; width:100%; height:80px; display:flex; align-items:center; justify-content:space-between; padding:0 2rem; background:#fff; box-shadow:0 2px 4px rgba(0,0,0,0.1); z-index:1000; }
+    header.global-header .logo { display:flex; align-items:center; }
+    header.global-header .logo img { height:40px; margin-right:0.5rem; }
+    header.global-header .logo span { font-size:1.5rem; font-weight:700; color:#007bff; }
+    header.global-header nav ul { list-style:none; display:flex; gap:1rem; }
+    header.global-header nav ul li a { padding:0.5rem; font-weight:600; transition:background 0.2s; }
+    header.global-header nav ul li a:hover, header.global-header nav ul li a.active { background:#007bff; color:#fff; border-radius:4px; }
+    main { padding-top:100px; }
+
+    /* Hero */
+    .edu-hero {
+      background: #007bff;      
+      color:#fff;
+      text-align:center;
+      padding:3rem 1rem;
+      margin:80px 0 2rem; /* Added top margin equal to header height */
+      border-radius:8px;
+    }
+        .edu-hero h1 { font-size:2.5rem; margin-bottom:1rem; }
+    .edu-hero p { font-size:1.1rem; max-width:700px; margin:auto; line-height:1.6; }
+
+    /* Tips Grid */
+    .tips-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:2rem; margin-bottom:3rem; }
+    .tip-card { background:#fff; border-radius:8px; padding:1.5rem; box-shadow:0 2px 8px rgba(0,0,0,0.1); transition:transform 0.2s; }
+    .tip-card:hover { transform:translateY(-5px); }
+    .tip-card h2 { font-size:1.25rem; color:#007bff; margin-bottom:0.75rem; }
+    .tip-card p { font-size:0.95rem; line-height:1.5; color:#555; }
+
+    /* Footer */
+    footer { text-align:center; padding:2rem 1rem; background:#fff; border-top:1px solid #eee; font-size:0.9rem; color:#777; }
+  </style>
 </head>
 <body>
-<!-- Global Header -->
-<header class="global-header">
+  <header class="global-header">
     <a href="index.html">
         <div class="logo">
-            <img src="assets/icons/logoSvikEdaSatt.png" alt="Svik eða Satt logo" />
-            <span>Svik eða Satt?</span>    
-        </div>    
+            <img src="assets/icons/logoSvikEdaSatt.png" alt="Logo" />
+            <span>Svik eða Satt?</span>
+        </div>
     </a>
     <nav>
-        <ul>
-            <li><a href="about.html">Um okkur</a></li>
-            <li><a href="contact.html">Hafðu samband</a></li>
-            <li><a href="rules.html">Leikreglur</a></li>
-            <li><a href="fraedsla.html">Fræðsla</a></li>
-            <li><a href="subscribe.html">Áskrift</a></li>
-            <li><a href="play.html" class="btn">Spilaðu Núna !</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Heim</a></li>
+        <li><a href="about.html">Um okkur</a></li>
+        <li><a href="contact.html">Hafðu samband</a></li>
+        <li><a href="rules.html">Leikreglur</a></li>
+        <li><a href="fraedsla.html" class="active">Fræðsla</a></li>
+        <li><a href="subscribe.html">Áskrift</a></li>
+        <li><a href="play.html" class="btn">Spilaðu Núna!</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<!-- Hero -->
-<section class="tips-hero">
-    <div class="label">Góð ráð</div>
-    <div class="content">
-        <div class="main-title">
-            ALLIR<br>
-            GETA<br>
-            LENT<br>
-            Í NETSVIKUM
-        </div>
-        <div class="tagline">
-            ÞÚ ERT EKKI VITLEYSINGUR EF<br>
-            ÞÚ LENDIR Í NETSVIKUM
-        </div>
-    </div>
-</section>
+  <main class="container">
+    <!-- Hero -->
+    <section class="edu-hero">
+      <h1>Fræðsla & Ráð</h1>
+      <p>Lærðu bestu vinnubrögð til að forðast netsvik og styrktu netöryggi þitt með þessum leiðbeiningum.</p>
+    </section>
 
-<!-- Tips List -->
-<section class="tips-list">
-    <div class="tip-item">
+    <!-- Educational Tips -->
+    <section class="tips-grid">
+      <div class="tip-card">
         <h2>Óvænt skilaboð</h2>
-        <p>Ef skilaboð krefjast aðgerða, biðja um persónuupplýsingar eða greiðslur: staðfestu við viðtakanda áður en þú smellir eða svarar.</p>
-    </div>
-    <div class="tip-item">
-        <h2>Notaðu tveggja þátta auðkenningu</h2>
-        <p>Bætir öryggi verulega, jafnvel þótt lykilorð leki.</p>
-    </div>
-    <div class="tip-item">
-        <h2>Athugaðu netföng og slóðir</h2>
-        <p>Litil munur á stafsetningu getur valdið fölsuðu veffangi. Dæmi: support@apple.com (satt) vs. support@apple.com (svik).</p>
-    </div>
-    <div class="tip-item">
-        <h2>Vertu gagnrýninn</h2>
-        <p>Ef það hljómar of gott til að vera satt… þá er það líklega ekki satt.</p>
-    </div>
-    <div class="tip-item">
-        <h2>Uppfærðu reglulega</h2>
-        <p>Forrit og stýrikerfi með nýjustu öryggisuppfærslum verja þig gegn algengum árásum.</p>
-    </div>
-    <div class="tip-item">
-        <h2>Spurðu í vafa</h2>
-        <p>Það er sterkt — ekki veikleiki — að leita ráða áður en þú bregst við grunnskemilegum skilaboðum.</p>
-    </div>
-</section>
+        <p>Stadfestu alltaf beiðnir áður en þú opnar eða svarar tölvupósti sem krefst aðgerða.</p>
+      </div>
+      <div class="tip-card">
+        <h2>Skoðaðu slóðir</h2>
+        <p>Horfðu á nákvæma skrifun í vefslóðum; lítill munur getur verið mikil blekking.</p>
+      </div>
+      <div class="tip-card">
+        <h2>Tveggja þátta auðkenning</h2>
+        <p>Virktu 2FA á öllum mikilvægum þjónustum til að bæta öryggi þitt verulega.</p>
+      </div>
+      <div class="tip-card">
+        <h2>Lesa stýrikerfisuppfærslur</h2>
+        <p>Haltu forritum og stýrikerfi uppfærðu með nýjustu öryggisuppfærslum.</p>
+      </div>
+      <div class="tip-card">
+        <h2>Gagnrýnin hugsun</h2>
+        <p>Vertu gagnrýninn á óumbeðnar beiðnir; ef það hljómar of gott til að vera satt… þá er það líklega ekki satt.</p>
+      </div>
+      <div class="tip-card">
+        <h2>Spurðu sérfræðing</h2>
+        <p>Ef þú ert í vafa skaltu leita ráða hjá netöryggissérfræðingi eða stuðningsaðila.</p>
+      </div>
+    </section>
+  </main>
 
-<footer>
+  <footer>
     <p>&copy; 2025 Svik eða Satt?</p>
-</footer>
+  </footer>
 </body>
 </html>
