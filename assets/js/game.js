@@ -19,6 +19,8 @@ const totalRounds = 50;
 let score = 0;
 let timerId;
 let timeLeft = 60;
+let currentIndex = 0;  
+
 
 // Load emails JSON
 function loadEmailPool() {
@@ -40,9 +42,10 @@ function initGame() {
   currentEmail = null;
   score = 0;
   timeLeft = 60;
+  currentIndex = 0;
   updateHeader();
   renderList();
-  renderDetail(null);
+  renderDetail(inbox[currentIndex] || null);
   startTimer();
 }
 
@@ -130,18 +133,51 @@ function renderList() {
 
 // Render detail
 function renderDetail(email) {
-  const det = document.getElementById('email-detail');
+  const detail = document.getElementById('email-detail');
+  const footer = document.getElementById('detail-footer');
   if (!email) {
-    det.innerHTML = '<p>Veldu tölvupóst til að skoða innihald.</p>';
+    detail.innerHTML = '<p>Veldu tölvupóst til að skoða innihald.</p>';
+    footer.innerHTML = '';
     return;
   }
-  currentEmail = email;
-  let html = `<h2>Subject: ${email.subject}</h2>`;
-  html += `<p><strong>From:</strong> ${email.sender}</p>`;
-  html += `<p>${email.body}</p>`;
-  html += `<button onclick="trashEmail(${email.id})">Trash</button>`;
-  det.innerHTML = html;
+  currentIndex = inbox.findIndex(e => e.id === email.id);
+
+  detail.innerHTML = `
+    <h2>Subject: ${email.subject}</h2>
+    <p><strong>From:</strong> ${email.sender}</p>
+    ${email.body}
+  `;
+
+  if (currentView === 'trash') {
+    footer.innerHTML = `
+      <button class="btn-restore" onclick="restoreEmail(${email.id})">Endurheimta</button>
+    `;
+  } else {
+    footer.innerHTML = `
+      <button class="btn-satt" onclick="handleSatt()">Satt</button>
+      <button class="btn-svik" onclick="trashEmail(${email.id})">Svik</button>
+    `;
+  }
 }
+
+
+function handleSatt() {
+  // Move to next email in inbox
+  if (currentIndex < inbox.length - 1) {
+    renderDetail(inbox[currentIndex + 1]);
+  } else {
+    // No more emails—clear detail or show win if criteria met
+    renderDetail(null);
+  }
+}
+
+
+// Jump to next email in inbox without trashing
+function renderNext() {
+  // simply close detail and highlight next
+  renderDetail(inbox[0] || null);
+}
+
 
 // Trash email
 function trashEmail(id) {
@@ -155,14 +191,21 @@ function trashEmail(id) {
   score += email.phishing ? 10 : -5;
   updateHeader();
   renderList();
-  renderDetail(null);
 
-  // Only win when you’ve trashed the required number of phishing emails
+  // Advance to next email (using idx, which now points at the next one)
+  if (inbox.length > 0) {
+    renderDetail(inbox[Math.min(idx, inbox.length - 1)]);
+  } else {
+    renderDetail(null);
+  }
+
+  // Win condition
   const phishingMoved = trash.filter(e => e.phishing).length;
   if (phishingMoved === NUM_PHISHING) {
     showWin();
   }
 }
+
 
 
 // Utility: shuffle
@@ -198,3 +241,28 @@ document.getElementById('play-again').addEventListener('click', () => {
 // if (inbox.length === 0) {
 //   showWin();
 // }
+
+function restoreEmail(id) {
+  const idx = trash.findIndex(e => e.id === id);
+  if (idx < 0) return;
+  const [email] = trash.splice(idx, 1);
+
+  // Reverse the score delta from when this email was trashed:
+  // If it was phishing (+10 when trashed), subtract 10.
+  // If it was genuine (–5 when trashed), add back 5.
+  if (email.phishing) {
+    score -= 10;
+  } else {
+    score += 5;
+  }
+
+  // Put it back into the inbox right after the currentIndex:
+  inbox.splice(currentIndex + 1, 0, email);
+
+  // Refresh UI
+  updateHeader();
+  renderList();
+
+  // Show the restored email in the detail panel
+  renderDetail(email);
+}
