@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play - Svik eða Satt?</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<!-- Global Header -->
+<header class="global-header">
+    <a href="index.html" class="logo">Svik eða Satt?</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Spil</a></li>
+            <li><a href="about.html">Um okkur</a></li>
+            <li><a href="contact.html">Hafðu samband</a></li>
+            <li><a href="tips.html">Góð ráð</a></li>
+            <li><a href="rules.html">Leikreglur</a></li>
+            <li><a href="fraedsla.html">Fræðsla</a></li>
+            <li><a href="subscribe.html">Áskrift</a></li>
+            <li><a href="play.html" class="btn">Spilaðu Núna !</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="play-header">
+    <div class="menu">☰</div>
+    <div class="challenge">ÁSKORUN 3/50</div>
+    <div style="margin-left:auto;">
+        Score: <span class="score">0</span> | Time: <span class="timer">60</span>s
+    </div>
+</div>
+<div id="play-area">
+    <div id="inbox-trash">
+        <div id="tabs">
+            <div data-tab="inbox" class="active">INBOX (<span id="tab-inbox-count">0</span>)</div>
+            <div data-tab="trash">TRASH (<span id="tab-trash-count">0</span>)</div>
+        </div>
+        <div id="email-list"></div>
+    </div>
+    <div id="email-detail">
+        <p>Select an email to view details.</p>
+    </div>
+</div>
+<script src="assets/js/game.js"></script>
+</body>
+</html>
