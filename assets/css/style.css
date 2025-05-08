@@ -1,8 +1,20 @@
 /* Shared Reset & Base */
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: Arial, sans-serif; line-height:1.5; }
-a { text-decoration:none; color: inherit; }
-ul { list-style:none; }
+* { 
+    margin:0; padding:0; box-sizing:border-box; 
+}
+
+body { 
+    font-family: 'Lato', Arial, sans-serif;
+    line-height:1.5;
+}
+
+a { 
+    text-decoration:none; color: inherit; 
+}
+
+ul { 
+    list-style:none; 
+}
 
 /* Header Nav */
 header.global-header {
@@ -15,10 +27,24 @@ header.global-header {
     position: sticky;
     top: 0;
     z-index: 100;
+    font-family: 'Lato', Arial, sans-serif;
 }
 header.global-header .logo {
     font-size: 1.5rem;
     font-weight: bold;
+}
+header.global-header .logo {
+    display: flex;
+    align-items: center;
+}
+header.global-header .logo img {
+height: 40px;        /* or whatever fits your design */
+margin-right: 0.5rem;
+}
+
+header.global-header .logo span {
+font-size: 1.25rem;  /* adjust as needed */
+font-weight: 700;
 }
 header.global-header nav ul {
     display: flex;
@@ -34,14 +60,32 @@ header.global-header nav ul li a:hover {
 }
 
 /* Button styles (e.g., Subscribe / Play Now) */
-.btn { display:inline-block; padding:0.5rem 1rem; background:#007bff; color:white; border-radius:4px; transition:background 0.2s; }
-.btn:hover { background:#0056b3; }
+.btn { 
+    display:inline-block; 
+    padding:0.5rem 1rem; 
+    background:#007bff; 
+    color:white; 
+    border-radius:4px; 
+    transition:background 0.2s; 
+}
+.btn:hover { 
+    background:#0056b3; 
+}
 
 /* Page container */
-.container { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+.container { 
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
 
 /* Footer */
-footer { text-align:center; padding:1rem; font-size:0.9rem; color:#666; }
+footer { 
+    text-align:center; 
+    padding:1rem; 
+    font-size:0.9rem; 
+    color:#666; 
+}
 
 /* Fræðsla / Góð ráð Page */
 
@@ -359,3 +403,72 @@ footer { text-align:center; padding:1rem; font-size:0.9rem; color:#666; }
     margin-top: 1rem;
     padding: 0.5rem 1rem;
 }
+
+
+
+
+/* Tips & Tricks Page (“Góð ráð”) */
+
+.tips-hero {
+    display: flex;
+    flex-wrap: wrap;
+    background: #f0f0f0;
+    margin-top: 1rem;
+  }
+  .tips-hero .label {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #ddd;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tips-hero .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .tips-hero .main-title {
+    flex: 1;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .tips-hero .tagline {
+    flex: 1;
+    padding: 2rem;
+    border-left: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .tips-list {
+    max-width: 960px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  .tips-list .tip-item {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+  .tips-list .tip-item h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  .tips-list .tip-item p {
+    margin: 0.5rem 0 0;
+    color: #444;
+    line-height: 1.4;
+  }
+  
