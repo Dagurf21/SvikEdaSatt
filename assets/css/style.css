@@ -1,0 +1,361 @@
+/* Shared Reset & Base */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial, sans-serif; line-height:1.5; }
+a { text-decoration:none; color: inherit; }
+ul { list-style:none; }
+
+/* Header Nav */
+header.global-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+header.global-header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+header.global-header nav ul {
+    display: flex;
+    gap: 1rem;
+}
+header.global-header nav ul li a {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+header.global-header nav ul li a:hover {
+    background: #f0f0f0;
+}
+
+/* Button styles (e.g., Subscribe / Play Now) */
+.btn { display:inline-block; padding:0.5rem 1rem; background:#007bff; color:white; border-radius:4px; transition:background 0.2s; }
+.btn:hover { background:#0056b3; }
+
+/* Page container */
+.container { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+
+/* Footer */
+footer { text-align:center; padding:1rem; font-size:0.9rem; color:#666; }
+
+/* Fræðsla / Góð ráð Page */
+
+/* Hero section */
+.tips-hero {
+    display: flex;
+    flex-wrap: wrap;
+    background: #f0f0f0;
+    margin-top: 1rem;
+}
+.tips-hero .label {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #ddd;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tips-hero .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.tips-hero .main-title {
+    flex: 1;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.tips-hero .tagline {
+    flex: 1;
+    padding: 2rem;
+    border-left: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Tips list */
+.tips-list {
+    max-width: 960px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+.tips-list h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.tips-list .tip-item {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.tips-list .tip-item p {
+    margin: 0.5rem 0 0;
+    color: #444;
+    line-height: 1.4;
+}
+
+
+/* About Us Page */
+.about-hero {
+    display: flex;
+    height: 300px;
+    margin-top: 1rem;
+    background: #f0f0f0;
+}
+.about-hero .label {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.about-hero .content {
+    flex: 1;
+    padding: 2rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Team Grid */
+.team-section {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+.team-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+.team-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.team-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.75rem;
+    background: #eee;
+}
+.team-card h3 {
+    margin: 0.5rem 0 0.25rem;
+    font-size: 1.1rem;
+}
+.team-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Contact Page Form Styles */
+.contact-page {
+    background: #f7f7f7;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+.contact-container form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+.contact-container form input,
+.contact-container form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+}
+.contact-container form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+.contact-container form button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.contact-container form button:hover {
+    background: #555;
+}
+
+/* Subscription Plans Page */
+.container h1 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem auto;
+    max-width: 960px;
+}
+.plan-card {
+    background: #eee;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+.plan-card h2 {
+    margin-bottom: 0.25rem;
+}
+.plan-card .subtext {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+.plan-card .price {
+    font-size: 1.75rem;
+    margin: 0.5rem 0;
+}
+.plan-card .price span {
+    font-size: 1rem;
+    color: #666;
+}
+.plan-card ul {
+    list-style: disc inside;
+    text-align: left;
+    margin-top: 1rem;
+    padding-left: 0;
+}
+.plan-card ul li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+
+/* Play page specific */
+.play-header {
+    background: #ccc;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.play-header .menu {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.play-header .challenge {
+    font-weight: bold;
+}
+
+#play-area {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+#inbox-trash {
+    width: 300px;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+}
+#tabs {
+    display: flex;
+    background: #8a7f7f;
+    color: white;
+}
+#tabs div {
+    flex: 1;
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+#tabs .active {
+    background: #fff;
+    color: #000;
+}
+#email-list {
+    flex: 1;
+    overflow-y: auto;
+}
+.email-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+.email-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
+}
+.email-item:hover {
+    background: #ddd;
+}
+
+#email-detail {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+#email-detail h2 {
+    margin-top: 0;
+}
+#email-detail button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+}
